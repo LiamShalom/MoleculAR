@@ -1,11 +1,15 @@
 version: '3.8'
 
 services:
-  molecular-analysis:
+  backend:
     build: .
     ports:
       - "8000:8000"
     environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-your-gemini-api-key}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY:-your-elevenlabs-api-key}
+      - STATSIG_SDK_KEY=${STATSIG_SDK_KEY:-your-statsig-sdk-key}
+      - DATABASE_URL=sqlite:///./data/analysis.db
       - HOST=0.0.0.0
       - PORT=8000
       - DEBUG=False
@@ -21,7 +25,18 @@ services:
       retries: 3
       start_period: 40s
 
-  # Optional: Add a reverse proxy for production
+  frontend:
+    build:
+      context: ./molviz
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
   nginx:
     image: nginx:alpine
     ports:
@@ -29,8 +44,8 @@ services:
       - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./molviz/build:/usr/share/nginx/html:ro
     depends_on:
-      - molecular-analysis
+      - backend
+      - frontend
     restart: unless-stopped
-    profiles:
-      - production

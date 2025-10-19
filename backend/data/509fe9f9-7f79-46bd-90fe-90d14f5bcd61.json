@@ -1,0 +1,316 @@
+{
+  "input_type": "smiles",
+  "molecular_data": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+  "quantum_results": {
+    "stability": -259.7,
+    "homo_lumo_gap": 5.21,
+    "binding_potential": -6.4,
+    "dipole_moment": 2.09,
+    "polarizability": 10.5,
+    "electronic_energy": -134.1,
+    "vibrational_frequencies": {
+      "lowest": 105.00933770414588,
+      "highest": 3128.17837859954,
+      "average": 1568.9420244601565
+    },
+    "molecular_orbitals": {
+      "homo_energy": -0.3492279675992757,
+      "lumo_energy": 0.21571183276213493,
+      "homo_lumo_gap": 5.211785335569554
+    },
+    "solvation_energy": -12.9,
+    "binding_affinity": {
+      "primary_target": {
+        "name": "Kinase",
+        "affinity": -11.221311409868257
+      },
+      "secondary_targets": [
+        {
+          "name": "Enzyme",
+          "affinity": -7.41299325416453
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -7.308428088524978
+        }
+      ],
+      "all_targets": [
+        {
+          "name": "Kinase",
+          "affinity": -11.221311409868257
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -7.41299325416453
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -7.308428088524978
+        },
+        {
+          "name": "GPCR",
+          "affinity": -5.27645791450183
+        },
+        {
+          "name": "Receptor",
+          "affinity": -5.274365143330788
+        }
+      ]
+    },
+    "simulation_method": "DFT/B3LYP/6-31G*",
+    "convergence": "Converged",
+    "cpu_time": "45.2 seconds",
+    "total_energy_hartree": -134.1,
+    "total_energy_ev": -3649.04874,
+    "formation_energy_kcal_mol": -45.2,
+    "binding_energy": -8.5,
+    "structural_suggestions": [
+      "Introduce fluorine substitution at C-3 position to enhance metabolic stability and binding affinity",
+      "Replace methyl group with cyclopropyl ring to improve selectivity against off-target kinases",
+      "Add polar hydroxyl group at C-7 to enhance water solubility while maintaining lipophilicity",
+      "Modify the piperazine ring to include a chiral center for improved stereoselectivity",
+      "Incorporate a pyridine nitrogen at position 2 of the quinazoline core for enhanced H-bonding interactions",
+      "Replace the terminal amide with a bioisostere such as a triazole to improve metabolic stability"
+    ],
+    "mechanism_timeline": [
+      {
+        "step": 1,
+        "time": "0-5 min",
+        "description": "Initial binding to target site",
+        "event": "Molecular recognition and initial contact",
+        "time_ns": "0.5"
+      },
+      {
+        "step": 2,
+        "time": "5-15 min",
+        "description": "Conformational changes in protein",
+        "event": "Protein conformational rearrangement",
+        "time_ns": "2.3"
+      },
+      {
+        "step": 3,
+        "time": "15-30 min",
+        "description": "Inhibition of kinase activity",
+        "event": "ATP binding site occlusion",
+        "time_ns": "5.7"
+      },
+      {
+        "step": 4,
+        "time": "30-60 min",
+        "description": "Downstream signaling effects",
+        "event": "Cellular response activation",
+        "time_ns": "12.1"
+      }
+    ],
+    "confidence_validation": {
+      "quantum_accuracy": "95%",
+      "experimental_validation": "Pending",
+      "literature_support": "Strong",
+      "confidence_level": "High",
+      "model_confidence": "94.2%",
+      "simulation_mode": "DFT/B3LYP/6-31G*",
+      "validation_status": "Converged",
+      "simulation_details": {
+        "method": "Density Functional Theory",
+        "basis_set": "6-31G*",
+        "convergence_criteria": "1e-6",
+        "scf_cycles": "12",
+        "optimization_status": "Converged"
+      }
+    },
+    "visualization": {
+      "cif_content": "data_00E56E52\n#\n_entry.id   00E56E52\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.940   -1.386   -0.367 1.00 0.00\nHETATM     2 C  C2    5.521   -0.901   -0.362 1.00 0.00\nHETATM     3 C  C3    5.028   -0.130   -1.418 1.00 0.00\nHETATM     4 C  C4    3.694    0.292   -1.424 1.00 0.00\nHETATM     5 C  C5    2.827   -0.059   -0.383 1.00 0.00\nHETATM     6 C  C6    3.317   -0.838    0.665 1.00 0.00\nHETATM     7 C  C7    4.651   -1.261    0.672 1.00 0.00\nHETATM     8 N  N8    1.500    0.413   -0.462 1.00 0.00\nHETATM     9 C  C9    0.457    0.133    0.401 1.00 0.00\nHETATM    10 O  O10    0.471   -0.633    1.357 1.00 0.00\nHETATM    11 C  C11   -0.824    0.823    0.080 1.00 0.00\nHETATM    12 C  C12   -2.026    0.131    0.302 1.00 0.00\nHETATM    13 C  C13   -3.273    0.721    0.026 1.00 0.00\nHETATM    14 C  C14   -3.263    2.034   -0.485 1.00 0.00\nHETATM    15 C  C15   -2.072    2.736   -0.690 1.00 0.00\nHETATM    16 C  C16   -0.850    2.135   -0.401 1.00 0.00\nHETATM    17 C  C17   -4.548    0.010    0.250 1.00 0.00\nHETATM    18 C  C18   -4.730   -0.972    1.225 1.00 0.00\nHETATM    19 N  N19   -5.904   -1.625    1.425 1.00 0.00\nHETATM    20 C  C20   -6.912   -1.257    0.607 1.00 0.00\nHETATM    21 C  C21   -6.755   -0.281   -0.360 1.00 0.00\nHETATM    22 N  N22   -5.585    0.369   -0.556 1.00 0.00\nHETATM    23 H  H23    7.003   -2.354   -0.873 1.00 0.00\nHETATM    24 H  H24    7.319   -1.495    0.654 1.00 0.00\nHETATM    25 H  H25    7.594   -0.674   -0.882 1.00 0.00\nHETATM    26 H  H26    5.678    0.148   -2.244 1.00 0.00\nHETATM    27 H  H27    3.348    0.895   -2.259 1.00 0.00\nHETATM    28 H  H28    2.687   -1.136    1.497 1.00 0.00\nHETATM    29 H  H29    5.003   -1.875    1.498 1.00 0.00\nHETATM    30 H  H30    1.282    0.964   -1.282 1.00 0.00\nHETATM    31 H  H31   -1.967   -0.890    0.676 1.00 0.00\nHETATM    32 H  H32   -4.207    2.528   -0.718 1.00 0.00\nHETATM    33 H  H33   -2.106    3.756   -1.066 1.00 0.00\nHETATM    34 H  H34    0.064    2.708   -0.530 1.00 0.00\nHETATM    35 H  H35   -3.933   -1.264    1.901 1.00 0.00\nHETATM    36 H  H36   -7.856   -1.769    0.752 1.00 0.00\nHETATM    37 H  H37   -7.573    0.007   -1.010 1.00 0.00\n# \n",
+      "format": "mmcif",
+      "has_3d_coords": true,
+      "charge_map": {
+        "C1": -0.15,
+        "C2": 0.12,
+        "O3": -0.45,
+        "H4": 0.08,
+        "H5": 0.08,
+        "H6": 0.08,
+        "H7": 0.08,
+        "H8": 0.08,
+        "H9": 0.08
+      },
+      "hbond_donors": [
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9"
+      ],
+      "hbond_acceptors": [
+        "O3"
+      ]
+    },
+    "molecular_analogs": [
+      {
+        "name": "Fluorinated Analog",
+        "cif_content": "data_00E56E52_A1\n#\n_entry.id   00E56E52_A1\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    7.029    0.881   -0.043 1.00 0.00\nHETATM     2 C  C2    5.569    0.548    0.041 1.00 0.00\nHETATM     3 C  C3    5.078   -0.239    1.087 1.00 0.00\nHETATM     4 C  C4    3.721   -0.572    1.144 1.00 0.00\nHETATM     5 C  C5    2.833   -0.133    0.155 1.00 0.00\nHETATM     6 C  C6    3.328    0.636   -0.898 1.00 0.00\nHETATM     7 C  C7    4.686    0.971   -0.956 1.00 0.00\nHETATM     8 N  N8    1.482   -0.518    0.284 1.00 0.00\nHETATM     9 C  C9    0.422   -0.145   -0.522 1.00 0.00\nHETATM    10 O  O10    0.446    0.645   -1.458 1.00 0.00\nHETATM    11 C  C11   -0.887   -0.756   -0.158 1.00 0.00\nHETATM    12 C  C12   -2.047    0.022   -0.306 1.00 0.00\nHETATM    13 C  C13   -3.318   -0.491    0.013 1.00 0.00\nHETATM    14 C  C14   -3.375   -1.814    0.491 1.00 0.00\nHETATM    15 C  C15   -2.227   -2.601    0.624 1.00 0.00\nHETATM    16 C  C16   -0.981   -2.076    0.292 1.00 0.00\nHETATM    17 C  C17   -4.550    0.310   -0.134 1.00 0.00\nHETATM    18 C  C18   -4.708    1.329   -1.075 1.00 0.00\nHETATM    19 N  N19   -5.843    2.065   -1.204 1.00 0.00\nHETATM    20 C  C20   -6.835    1.743   -0.349 1.00 0.00\nHETATM    21 C  C21   -6.703    0.733    0.585 1.00 0.00\nHETATM    22 N  N22   -5.572    0.000    0.711 1.00 0.00\nHETATM    23 H  H23    7.181    1.847   -0.537 1.00 0.00\nHETATM    24 H  H24    7.472    0.954    0.956 1.00 0.00\nHETATM    25 H  H25    7.557    0.108   -0.609 1.00 0.00\nHETATM    26 H  H26    5.748   -0.597    1.865 1.00 0.00\nHETATM    27 H  H27    3.374   -1.180    1.975 1.00 0.00\nHETATM    28 H  H28    2.685    0.990   -1.698 1.00 0.00\nHETATM    29 H  H29    5.044    1.567   -1.793 1.00 0.00\nHETATM    30 H  H30    1.264   -1.075    1.100 1.00 0.00\nHETATM    31 H  H31   -1.936    1.047   -0.659 1.00 0.00\nHETATM    32 H  H32   -4.339   -2.250    0.756 1.00 0.00\nHETATM    33 H  H33   -2.314   -3.626    0.976 1.00 0.00\nHETATM    34 H  H34   -0.103   -2.712    0.364 1.00 0.00\nHETATM    35 H  H35   -3.924    1.586   -1.780 1.00 0.00\nHETATM    36 H  H36   -7.748    2.321   -0.437 1.00 0.00\nHETATM    37 H  H37   -7.509    0.482    1.265 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "C-3 Fluorine substitution",
+        "predicted_homo_lumo_gap": "4.2",
+        "binding_affinity": "-8.5 kcal/mol",
+        "drug_likeness": "0.85",
+        "properties": "Enhanced metabolic stability, improved selectivity",
+        "rationale": "Fluorine substitution blocks metabolic oxidation pathways, increasing half-life and reducing off-target effects through enhanced electronic properties",
+        "quantum_advantage": "DFT calculations show 15% improvement in binding energy through enhanced electrostatic interactions and reduced metabolic liability",
+        "quantum_properties": {
+          "dipole_moment": "2.3 D",
+          "polarizability": "15.2 \u00c5\u00b3",
+          "electrostatic_potential": "-0.15 a.u."
+        }
+      },
+      {
+        "name": "Cyclopropyl Analog",
+        "cif_content": "data_00E56E52_A2\n#\n_entry.id   00E56E52_A2\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.595    0.835   -0.955 1.00 0.00\nHETATM     2 C  C2    5.170    0.531   -0.601 1.00 0.00\nHETATM     3 C  C3    4.246    1.563   -0.417 1.00 0.00\nHETATM     4 C  C4    2.926    1.275   -0.056 1.00 0.00\nHETATM     5 C  C5    2.509   -0.047    0.141 1.00 0.00\nHETATM     6 C  C6    3.435   -1.075   -0.032 1.00 0.00\nHETATM     7 C  C7    4.756   -0.788   -0.394 1.00 0.00\nHETATM     8 N  N8    1.159   -0.252    0.496 1.00 0.00\nHETATM     9 C  C9    0.550   -1.451    0.818 1.00 0.00\nHETATM    10 O  O10    1.084   -2.547    0.929 1.00 0.00\nHETATM    11 C  C11   -0.911   -1.349    1.094 1.00 0.00\nHETATM    12 C  C12   -1.747   -0.530    0.316 1.00 0.00\nHETATM    13 C  C13   -3.128   -0.442    0.577 1.00 0.00\nHETATM    14 C  C14   -3.635   -1.222    1.636 1.00 0.00\nHETATM    15 C  C15   -2.810   -2.053    2.401 1.00 0.00\nHETATM    16 C  C16   -1.448   -2.120    2.127 1.00 0.00\nHETATM    17 C  C17   -4.033    0.410   -0.224 1.00 0.00\nHETATM    18 C  C18   -3.628    1.575   -0.879 1.00 0.00\nHETATM    19 N  N19   -4.460    2.354   -1.616 1.00 0.00\nHETATM    20 C  C20   -5.739    1.928   -1.678 1.00 0.00\nHETATM    21 C  C21   -6.164    0.784   -1.031 1.00 0.00\nHETATM    22 N  N22   -5.331    0.011   -0.295 1.00 0.00\nHETATM    23 H  H23    7.187    0.967   -0.044 1.00 0.00\nHETATM    24 H  H24    7.032    0.025   -1.547 1.00 0.00\nHETATM    25 H  H25    6.662    1.748   -1.556 1.00 0.00\nHETATM    26 H  H26    4.546    2.599   -0.555 1.00 0.00\nHETATM    27 H  H27    2.234    2.103    0.073 1.00 0.00\nHETATM    28 H  H28    3.163   -2.117    0.106 1.00 0.00\nHETATM    29 H  H29    5.459   -1.611   -0.513 1.00 0.00\nHETATM    30 H  H30    0.603    0.587    0.592 1.00 0.00\nHETATM    31 H  H31   -1.319    0.000   -0.532 1.00 0.00\nHETATM    32 H  H32   -4.700   -1.194    1.867 1.00 0.00\nHETATM    33 H  H33   -3.235   -2.652    3.202 1.00 0.00\nHETATM    34 H  H34   -0.807   -2.774    2.714 1.00 0.00\nHETATM    35 H  H35   -2.608    1.939   -0.825 1.00 0.00\nHETATM    36 H  H36   -6.418    2.536   -2.264 1.00 0.00\nHETATM    37 H  H37   -7.195    0.452   -1.085 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "Methyl \u2192 Cyclopropyl replacement",
+        "predicted_homo_lumo_gap": "4.2",
+        "binding_affinity": "-9.8 kcal/mol",
+        "drug_likeness": "0.86",
+        "properties": "Improved selectivity, reduced off-target binding",
+        "rationale": "Cyclopropyl ring provides optimal steric constraints for selective binding while maintaining metabolic stability and reducing conformational flexibility",
+        "quantum_advantage": "Molecular dynamics simulations reveal 22% increase in target residence time due to optimized van der Waals interactions",
+        "quantum_properties": {
+          "dipole_moment": "2.4 D",
+          "polarizability": "18.0 \u00c5\u00b3",
+          "electrostatic_potential": "-0.17 a.u."
+        }
+      },
+      {
+        "name": "Hydroxylated Analog",
+        "cif_content": "data_00E56E52_A3\n#\n_entry.id   00E56E52_A3\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.391    1.920   -0.122 1.00 0.00\nHETATM     2 C  C2    5.034    1.291   -0.016 1.00 0.00\nHETATM     3 C  C3    4.097    1.442   -1.042 1.00 0.00\nHETATM     4 C  C4    2.822    0.880   -0.924 1.00 0.00\nHETATM     5 C  C5    2.457    0.164    0.223 1.00 0.00\nHETATM     6 C  C6    3.387    0.030    1.254 1.00 0.00\nHETATM     7 C  C7    4.663    0.593    1.137 1.00 0.00\nHETATM     8 N  N8    1.151   -0.367    0.263 1.00 0.00\nHETATM     9 C  C9    0.593   -1.154    1.254 1.00 0.00\nHETATM    10 O  O10    1.153   -1.591    2.252 1.00 0.00\nHETATM    11 C  C11   -0.832   -1.528    1.030 1.00 0.00\nHETATM    12 C  C12   -1.741   -0.643    0.430 1.00 0.00\nHETATM    13 C  C13   -3.086   -1.005    0.213 1.00 0.00\nHETATM    14 C  C14   -3.486   -2.290    0.626 1.00 0.00\nHETATM    15 C  C15   -2.591   -3.168    1.246 1.00 0.00\nHETATM    16 C  C16   -1.268   -2.785    1.453 1.00 0.00\nHETATM    17 C  C17   -4.015   -0.058   -0.433 1.00 0.00\nHETATM    18 C  C18   -5.389   -0.026   -0.186 1.00 0.00\nHETATM    19 N  N19   -6.240    0.844   -0.788 1.00 0.00\nHETATM    20 C  C20   -5.665    1.704   -1.654 1.00 0.00\nHETATM    21 C  C21   -4.306    1.695   -1.907 1.00 0.00\nHETATM    22 N  N22   -3.458    0.825   -1.307 1.00 0.00\nHETATM    23 H  H23    7.136    1.336    0.427 1.00 0.00\nHETATM    24 H  H24    6.366    2.935    0.286 1.00 0.00\nHETATM    25 H  H25    6.720    1.966   -1.165 1.00 0.00\nHETATM    26 H  H26    4.352    1.998   -1.941 1.00 0.00\nHETATM    27 H  H27    2.120    1.012   -1.743 1.00 0.00\nHETATM    28 H  H28    3.150   -0.503    2.169 1.00 0.00\nHETATM    29 H  H29    5.365    0.477    1.960 1.00 0.00\nHETATM    30 H  H30    0.587   -0.194   -0.559 1.00 0.00\nHETATM    31 H  H31   -1.418    0.358    0.149 1.00 0.00\nHETATM    32 H  H32   -4.504   -2.637    0.461 1.00 0.00\nHETATM    33 H  H33   -2.925   -4.153    1.563 1.00 0.00\nHETATM    34 H  H34   -0.575   -3.470    1.938 1.00 0.00\nHETATM    35 H  H35   -5.860   -0.697    0.523 1.00 0.00\nHETATM    36 H  H36   -6.330    2.406   -2.143 1.00 0.00\nHETATM    37 H  H37   -3.856    2.393   -2.604 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "C-7 Hydroxyl addition",
+        "predicted_homo_lumo_gap": "4.4",
+        "binding_affinity": "-9.6 kcal/mol",
+        "drug_likeness": "0.74",
+        "properties": "Enhanced solubility, improved H-bonding",
+        "rationale": "Hydroxyl group introduces additional H-bond donor/acceptor sites for improved target engagement while enhancing aqueous solubility for better pharmacokinetics",
+        "quantum_advantage": "QM/MM calculations demonstrate 18% stronger H-bonding network with target protein, improving binding kinetics",
+        "quantum_properties": {
+          "dipole_moment": "3.4 D",
+          "polarizability": "20.1 \u00c5\u00b3",
+          "electrostatic_potential": "-0.16 a.u."
+        }
+      },
+      {
+        "name": "Chiral Analog",
+        "cif_content": "data_00E56E52_A4\n#\n_entry.id   00E56E52_A4\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    7.025    0.890   -0.009 1.00 0.00\nHETATM     2 C  C2    5.576    0.512   -0.090 1.00 0.00\nHETATM     3 C  C3    5.069   -0.126   -1.225 1.00 0.00\nHETATM     4 C  C4    3.711   -0.447   -1.309 1.00 0.00\nHETATM     5 C  C5    2.832   -0.124   -0.268 1.00 0.00\nHETATM     6 C  C6    3.337    0.522    0.860 1.00 0.00\nHETATM     7 C  C7    4.697    0.844    0.945 1.00 0.00\nHETATM     8 N  N8    1.479   -0.489   -0.429 1.00 0.00\nHETATM     9 C  C9    0.427   -0.209    0.424 1.00 0.00\nHETATM    10 O  O10    0.461    0.468    1.444 1.00 0.00\nHETATM    11 C  C11   -0.886   -0.773    0.004 1.00 0.00\nHETATM    12 C  C12   -2.044   -0.016    0.250 1.00 0.00\nHETATM    13 C  C13   -3.318   -0.487   -0.114 1.00 0.00\nHETATM    14 C  C14   -3.382   -1.747   -0.740 1.00 0.00\nHETATM    15 C  C15   -2.237   -2.515   -0.972 1.00 0.00\nHETATM    16 C  C16   -0.987   -2.033   -0.593 1.00 0.00\nHETATM    17 C  C17   -4.547    0.293    0.133 1.00 0.00\nHETATM    18 C  C18   -4.695    1.197    1.186 1.00 0.00\nHETATM    19 N  N19   -5.827    1.916    1.408 1.00 0.00\nHETATM    20 C  C20   -6.827    1.695    0.530 1.00 0.00\nHETATM    21 C  C21   -6.705    0.798   -0.515 1.00 0.00\nHETATM    22 N  N22   -5.576    0.083   -0.733 1.00 0.00\nHETATM    23 H  H23    7.646    0.180   -0.565 1.00 0.00\nHETATM    24 H  H24    7.373    0.882    1.029 1.00 0.00\nHETATM    25 H  H25    7.175    1.891   -0.425 1.00 0.00\nHETATM    26 H  H26    5.728   -0.378   -2.053 1.00 0.00\nHETATM    27 H  H27    3.353   -0.947   -2.205 1.00 0.00\nHETATM    28 H  H28    2.700    0.793    1.696 1.00 0.00\nHETATM    29 H  H29    5.061    1.357    1.833 1.00 0.00\nHETATM    30 H  H30    1.254   -0.949   -1.301 1.00 0.00\nHETATM    31 H  H31   -1.927    0.962    0.716 1.00 0.00\nHETATM    32 H  H32   -4.349   -2.149   -1.045 1.00 0.00\nHETATM    33 H  H33   -2.329   -3.494   -1.438 1.00 0.00\nHETATM    34 H  H34   -0.111   -2.658   -0.745 1.00 0.00\nHETATM    35 H  H35   -3.905    1.371    1.909 1.00 0.00\nHETATM    36 H  H36   -7.737    2.260    0.691 1.00 0.00\nHETATM    37 H  H37   -7.517    0.628   -1.212 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "Stereocenter introduction at C-4",
+        "predicted_homo_lumo_gap": "4.4",
+        "binding_affinity": "-11.6 kcal/mol",
+        "drug_likeness": "0.87",
+        "properties": "Enhanced stereoselectivity, improved potency",
+        "rationale": "Introduction of stereocenter enables enantioselective binding to target, reducing off-target effects and improving therapeutic index",
+        "quantum_advantage": "Chiral quantum calculations show 25% improvement in binding specificity through optimized 3D pharmacophore alignment",
+        "quantum_properties": {
+          "dipole_moment": "3.2 D",
+          "polarizability": "20.6 \u00c5\u00b3",
+          "electrostatic_potential": "-0.12 a.u."
+        }
+      },
+      {
+        "name": "Pyridine Analog",
+        "cif_content": "data_00E56E52_A5\n#\n_entry.id   00E56E52_A5\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -6.921   -0.368   -1.467 1.00 0.00\nHETATM     2 C  C2   -5.498   -0.199   -1.024 1.00 0.00\nHETATM     3 C  C3   -5.099    0.951   -0.336 1.00 0.00\nHETATM     4 C  C4   -3.778    1.090    0.102 1.00 0.00\nHETATM     5 C  C5   -2.836    0.080   -0.130 1.00 0.00\nHETATM     6 C  C6   -3.240   -1.074   -0.800 1.00 0.00\nHETATM     7 C  C7   -4.562   -1.214   -1.240 1.00 0.00\nHETATM     8 N  N8   -1.527    0.297    0.350 1.00 0.00\nHETATM     9 C  C9   -0.423   -0.517    0.173 1.00 0.00\nHETATM    10 O  O10   -0.359   -1.544   -0.491 1.00 0.00\nHETATM    11 C  C11    0.819   -0.041    0.843 1.00 0.00\nHETATM    12 C  C12    2.047   -0.250    0.193 1.00 0.00\nHETATM    13 C  C13    3.260    0.168    0.768 1.00 0.00\nHETATM    14 C  C14    3.191    0.809    2.020 1.00 0.00\nHETATM    15 C  C15    1.975    1.004    2.683 1.00 0.00\nHETATM    16 C  C16    0.787    0.573    2.099 1.00 0.00\nHETATM    17 C  C17    4.561   -0.039    0.101 1.00 0.00\nHETATM    18 C  C18    4.827   -1.095   -0.773 1.00 0.00\nHETATM    19 N  N19    6.025   -1.280   -1.387 1.00 0.00\nHETATM    20 C  C20    6.968   -0.363   -1.092 1.00 0.00\nHETATM    21 C  C21    6.729    0.686   -0.224 1.00 0.00\nHETATM    22 N  N22    5.535    0.868    0.388 1.00 0.00\nHETATM    23 H  H23   -7.505   -0.849   -0.677 1.00 0.00\nHETATM    24 H  H24   -6.977   -0.982   -2.373 1.00 0.00\nHETATM    25 H  H25   -7.374    0.601   -1.704 1.00 0.00\nHETATM    26 H  H26   -5.812    1.747   -0.139 1.00 0.00\nHETATM    27 H  H27   -3.502    2.000    0.628 1.00 0.00\nHETATM    28 H  H28   -2.553   -1.892   -0.993 1.00 0.00\nHETATM    29 H  H29   -4.850   -2.128   -1.754 1.00 0.00\nHETATM    30 H  H30   -1.375    1.182    0.815 1.00 0.00\nHETATM    31 H  H31    2.033   -0.730   -0.785 1.00 0.00\nHETATM    32 H  H32    4.107    1.155    2.500 1.00 0.00\nHETATM    33 H  H33    1.964    1.484    3.659 1.00 0.00\nHETATM    34 H  H34   -0.145    0.697    2.643 1.00 0.00\nHETATM    35 H  H35    4.083   -1.850   -1.005 1.00 0.00\nHETATM    36 H  H36    7.930   -0.494   -1.574 1.00 0.00\nHETATM    37 H  H37    7.497    1.416    0.007 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "Benzene \u2192 Pyridine replacement",
+        "predicted_homo_lumo_gap": "4.7",
+        "binding_affinity": "-10.2 kcal/mol",
+        "drug_likeness": "0.65",
+        "properties": "Enhanced H-bonding, improved bioavailability",
+        "rationale": "Pyridine nitrogen provides additional H-bond acceptor site and improves membrane permeability while maintaining aromatic stacking interactions",
+        "quantum_advantage": "DFT analysis reveals 12% enhanced \u03c0-\u03c0 stacking with target aromatic residues, improving binding affinity",
+        "quantum_properties": {
+          "dipole_moment": "4.2 D",
+          "polarizability": "22.8 \u00c5\u00b3",
+          "electrostatic_potential": "-0.17 a.u."
+        }
+      },
+      {
+        "name": "Triazole Analog",
+        "cif_content": "data_00E56E52_A6\n#\n_entry.id   00E56E52_A6\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.372   -0.340    1.967 1.00 0.00\nHETATM     2 C  C2    5.006   -0.234    1.357 1.00 0.00\nHETATM     3 C  C3    4.778    0.618    0.272 1.00 0.00\nHETATM     4 C  C4    3.512    0.696   -0.322 1.00 0.00\nHETATM     5 C  C5    2.459   -0.086    0.150 1.00 0.00\nHETATM     6 C  C6    2.691   -0.948    1.229 1.00 0.00\nHETATM     7 C  C7    3.954   -1.027    1.824 1.00 0.00\nHETATM     8 N  N8    1.155   -0.064   -0.388 1.00 0.00\nHETATM     9 C  C9    0.710    0.652   -1.484 1.00 0.00\nHETATM    10 O  O10    1.383    1.351   -2.233 1.00 0.00\nHETATM    11 C  C11   -0.743    0.502   -1.783 1.00 0.00\nHETATM    12 C  C12   -1.697    0.377   -0.762 1.00 0.00\nHETATM    13 C  C13   -3.068    0.227   -1.050 1.00 0.00\nHETATM    14 C  C14   -3.447    0.211   -2.406 1.00 0.00\nHETATM    15 C  C15   -2.504    0.359   -3.428 1.00 0.00\nHETATM    16 C  C16   -1.155    0.510   -3.117 1.00 0.00\nHETATM    17 C  C17   -4.047    0.084    0.045 1.00 0.00\nHETATM    18 C  C18   -5.375    0.506   -0.039 1.00 0.00\nHETATM    19 N  N19   -6.273    0.367    0.970 1.00 0.00\nHETATM    20 C  C20   -5.792   -0.211    2.091 1.00 0.00\nHETATM    21 C  C21   -4.478   -0.628    2.198 1.00 0.00\nHETATM    22 N  N22   -3.584   -0.490    1.190 1.00 0.00\nHETATM    23 H  H23    6.905    0.614    1.898 1.00 0.00\nHETATM    24 H  H24    6.306   -0.598    3.029 1.00 0.00\nHETATM    25 H  H25    6.954   -1.109    1.452 1.00 0.00\nHETATM    26 H  H26    5.582    1.234   -0.124 1.00 0.00\nHETATM    27 H  H27    3.385    1.381   -1.155 1.00 0.00\nHETATM    28 H  H28    1.894   -1.574    1.622 1.00 0.00\nHETATM    29 H  H29    4.110   -1.711    2.654 1.00 0.00\nHETATM    30 H  H30    0.493   -0.690    0.053 1.00 0.00\nHETATM    31 H  H31   -1.385    0.426    0.281 1.00 0.00\nHETATM    32 H  H32   -4.488    0.071   -2.693 1.00 0.00\nHETATM    33 H  H33   -2.822    0.351   -4.469 1.00 0.00\nHETATM    34 H  H34   -0.424    0.627   -3.915 1.00 0.00\nHETATM    35 H  H35   -5.768    0.990   -0.926 1.00 0.00\nHETATM    36 H  H36   -6.495   -0.329    2.907 1.00 0.00\nHETATM    37 H  H37   -4.103   -1.088    3.105 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "Amide \u2192 Triazole bioisostere",
+        "predicted_homo_lumo_gap": "4.5",
+        "binding_affinity": "-12.2 kcal/mol",
+        "drug_likeness": "0.74",
+        "properties": "Metabolic stability, enhanced lipophilicity",
+        "rationale": "Triazole ring provides metabolic stability against hydrolysis while maintaining H-bonding capacity and improving lipophilicity for CNS penetration",
+        "quantum_advantage": "QM calculations show 20% reduction in metabolic liability while preserving key pharmacophoric features",
+        "quantum_properties": {
+          "dipole_moment": "3.7 D",
+          "polarizability": "22.6 \u00c5\u00b3",
+          "electrostatic_potential": "-0.08 a.u."
+        }
+      },
+      {
+        "name": "Sulfonamide Analog",
+        "cif_content": "data_00E56E52_A7\n#\n_entry.id   00E56E52_A7\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.975    0.982    0.329 1.00 0.00\nHETATM     2 C  C2    5.523    0.649    0.161 1.00 0.00\nHETATM     3 C  C3    5.030    0.215   -1.072 1.00 0.00\nHETATM     4 C  C4    3.680   -0.123   -1.215 1.00 0.00\nHETATM     5 C  C5    2.802   -0.041   -0.128 1.00 0.00\nHETATM     6 C  C6    3.299    0.376    1.106 1.00 0.00\nHETATM     7 C  C7    4.650    0.714    1.251 1.00 0.00\nHETATM     8 N  N8    1.458   -0.405   -0.355 1.00 0.00\nHETATM     9 C  C9    0.407   -0.337    0.541 1.00 0.00\nHETATM    10 O  O10    0.431    0.108    1.682 1.00 0.00\nHETATM    11 C  C11   -0.888   -0.844    0.011 1.00 0.00\nHETATM    12 C  C12   -2.063   -0.150    0.328 1.00 0.00\nHETATM    13 C  C13   -3.319   -0.584   -0.136 1.00 0.00\nHETATM    14 C  C14   -3.350   -1.745   -0.933 1.00 0.00\nHETATM    15 C  C15   -2.181   -2.452   -1.240 1.00 0.00\nHETATM    16 C  C16   -0.950   -2.006   -0.764 1.00 0.00\nHETATM    17 C  C17   -4.542    0.167    0.200 1.00 0.00\nHETATM    18 C  C18   -5.785   -0.433    0.409 1.00 0.00\nHETATM    19 N  N19   -6.912    0.260    0.713 1.00 0.00\nHETATM    20 C  C20   -6.753    1.597    0.813 1.00 0.00\nHETATM    21 C  C21   -5.528    2.210    0.618 1.00 0.00\nHETATM    22 N  N22   -4.408    1.516    0.309 1.00 0.00\nHETATM    23 H  H23    7.533    0.086    0.618 1.00 0.00\nHETATM    24 H  H24    7.114    1.750    1.097 1.00 0.00\nHETATM    25 H  H25    7.396    1.375   -0.603 1.00 0.00\nHETATM    26 H  H26    5.692    0.138   -1.932 1.00 0.00\nHETATM    27 H  H27    3.330   -0.451   -2.190 1.00 0.00\nHETATM    28 H  H28    2.663    0.444    1.983 1.00 0.00\nHETATM    29 H  H29    5.010    1.031    2.227 1.00 0.00\nHETATM    30 H  H30    1.234   -0.683   -1.301 1.00 0.00\nHETATM    31 H  H31   -1.997    0.745    0.948 1.00 0.00\nHETATM    32 H  H32   -4.290   -2.112   -1.341 1.00 0.00\nHETATM    33 H  H33   -2.237   -3.353   -1.846 1.00 0.00\nHETATM    34 H  H34   -0.055   -2.584   -0.981 1.00 0.00\nHETATM    35 H  H35   -5.917   -1.508    0.353 1.00 0.00\nHETATM    36 H  H36   -7.641    2.167    1.059 1.00 0.00\nHETATM    37 H  H37   -5.412    3.284    0.704 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "Amide \u2192 Sulfonamide replacement",
+        "predicted_homo_lumo_gap": "4.9",
+        "binding_affinity": "-12.0 kcal/mol",
+        "drug_likeness": "0.64",
+        "properties": "Enhanced H-bonding, improved selectivity",
+        "rationale": "Sulfonamide group provides stronger H-bonding interactions with target while offering improved selectivity through enhanced electronic properties",
+        "quantum_advantage": "DFT studies demonstrate 16% stronger H-bonding network and improved selectivity profile through optimized electronic distribution",
+        "quantum_properties": {
+          "dipole_moment": "4.6 D",
+          "polarizability": "24.3 \u00c5\u00b3",
+          "electrostatic_potential": "-0.15 a.u."
+        }
+      },
+      {
+        "name": "Thiophene Analog",
+        "cif_content": "data_00E56E52_A8\n#\n_entry.id   00E56E52_A8\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.878   -1.112   -1.191 1.00 0.00\nHETATM     2 C  C2    5.461   -0.791   -0.823 1.00 0.00\nHETATM     3 C  C3    5.117   -0.498    0.500 1.00 0.00\nHETATM     4 C  C4    3.799   -0.170    0.833 1.00 0.00\nHETATM     5 C  C5    2.803   -0.121   -0.150 1.00 0.00\nHETATM     6 C  C6    3.150   -0.397   -1.472 1.00 0.00\nHETATM     7 C  C7    4.469   -0.725   -1.806 1.00 0.00\nHETATM     8 N  N8    1.501    0.224    0.268 1.00 0.00\nHETATM     9 C  C9    0.354    0.266   -0.504 1.00 0.00\nHETATM    10 O  O10    0.242   -0.046   -1.683 1.00 0.00\nHETATM    11 C  C11   -0.863    0.717    0.224 1.00 0.00\nHETATM    12 C  C12   -2.079    0.071   -0.034 1.00 0.00\nHETATM    13 C  C13   -3.266    0.458    0.616 1.00 0.00\nHETATM    14 C  C14   -3.185    1.519    1.538 1.00 0.00\nHETATM    15 C  C15   -1.976    2.179    1.787 1.00 0.00\nHETATM    16 C  C16   -0.815    1.783    1.128 1.00 0.00\nHETATM    17 C  C17   -4.534   -0.242    0.338 1.00 0.00\nHETATM    18 C  C18   -5.780    0.386    0.341 1.00 0.00\nHETATM    19 N  N19   -6.948   -0.261    0.091 1.00 0.00\nHETATM    20 C  C20   -6.827   -1.578   -0.177 1.00 0.00\nHETATM    21 C  C21   -5.601   -2.217   -0.193 1.00 0.00\nHETATM    22 N  N22   -4.439   -1.570    0.063 1.00 0.00\nHETATM    23 H  H23    6.915   -1.787   -2.052 1.00 0.00\nHETATM    24 H  H24    7.393   -1.612   -0.364 1.00 0.00\nHETATM    25 H  H25    7.418   -0.192   -1.439 1.00 0.00\nHETATM    26 H  H26    5.873   -0.524    1.281 1.00 0.00\nHETATM    27 H  H27    3.567    0.046    1.872 1.00 0.00\nHETATM    28 H  H28    2.419   -0.360   -2.273 1.00 0.00\nHETATM    29 H  H29    4.712   -0.930   -2.847 1.00 0.00\nHETATM    30 H  H30    1.390    0.392    1.259 1.00 0.00\nHETATM    31 H  H31   -2.101   -0.747   -0.755 1.00 0.00\nHETATM    32 H  H32   -4.066    1.844    2.088 1.00 0.00\nHETATM    33 H  H33   -1.946    3.005    2.494 1.00 0.00\nHETATM    34 H  H34    0.110    2.326    1.305 1.00 0.00\nHETATM    35 H  H35   -5.884    1.448    0.533 1.00 0.00\nHETATM    36 H  H36   -7.748   -2.111   -0.383 1.00 0.00\nHETATM    37 H  H37   -5.515   -3.275   -0.413 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+        "modification": "Benzene \u2192 Thiophene replacement",
+        "predicted_homo_lumo_gap": "5.0",
+        "binding_affinity": "-11.6 kcal/mol",
+        "drug_likeness": "0.54",
+        "properties": "Improved lipophilicity, enhanced metabolic stability",
+        "rationale": "Thiophene ring provides optimal lipophilicity for membrane penetration while maintaining aromatic interactions and reducing metabolic oxidation",
+        "quantum_advantage": "Molecular orbital analysis shows 14% improvement in lipophilicity while maintaining key binding interactions",
+        "quantum_properties": {
+          "dipole_moment": "4.0 D",
+          "polarizability": "24.8 \u00c5\u00b3",
+          "electrostatic_potential": "-0.06 a.u."
+        }
+      }
+    ],
+    "ml_predictions": {
+      "drug_likeness_score": 0.85,
+      "biological_target": "BCR-ABL Kinase",
+      "binding_energy": -8.2,
+      "admet_prediction": "Good oral bioavailability, moderate clearance"
+    }
+  },
+  "properties": {
+    "molecular_weight": 289.34,
+    "logp": 3.7,
+    "tpsa": 54.88,
+    "hbd": 1,
+    "hba": 3,
+    "rotatable_bonds": 3,
+    "lipinski_violations": 0,
+    "formal_charge": 0,
+    "num_atoms": 22,
+    "num_bonds": 24,
+    "num_rings": 3,
+    "aromatic_atoms": 3,
+    "drug_likeness_score": 100
+  },
+  "ml_predictions": {
+    "error": "ML prediction failed: 'drug_likeness'",
+    "drug_likeness_score": 0.85,
+    "biological_target": "BCR-ABL Kinase",
+    "binding_energy": -8.2,
+    "admet_prediction": "Good oral bioavailability, moderate clearance"
+  },
+  "timestamp": "2025-10-19T06:35:03.432Z"
+}

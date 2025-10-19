@@ -67,7 +67,7 @@ function QuantumAnalysisPage() {
 
     try {
       // Call backend API for quantum simulation
-      const response = await fetch('http://localhost:8000/api/quantum_simulate', {
+      const response = await fetch('https://molecular-analysis-api-7def38974c94.herokuapp.com/api/quantum_simulate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
