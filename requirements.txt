@@ -16,3 +16,4 @@ elevenlabs
 google-generativeai
 statsig
 rdkit
+aiohttp
