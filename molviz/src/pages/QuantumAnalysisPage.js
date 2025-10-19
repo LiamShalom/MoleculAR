@@ -38,6 +38,7 @@ function QuantumAnalysisPage() {
   const [dynamicsData, setDynamicsData] = useState(null);
   const [currentRepresentation, setCurrentRepresentation] = useState('ballstick');
   const analogViewersRef = useRef({});
+  const resultsRef = useRef(null);
 
   const onDrop = (acceptedFiles) => {
     const file = acceptedFiles[0];
@@ -87,6 +88,24 @@ function QuantumAnalysisPage() {
       const results = await response.json();
 
       setAnalysisResults(results);
+      // scroll-to-results (small delay so DOM renders)
+      setTimeout(() => {
+        try {
+          const el = resultsRef && resultsRef.current;
+          if (el) {
+            // Primary: smooth scrollIntoView
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Fallback: ensure scroll by setting window.scrollTo to element position after short delay
+            setTimeout(() => {
+              try {
+                const rect = el.getBoundingClientRect();
+                const absoluteTop = window.pageYOffset + rect.top;
+                window.scrollTo({ top: Math.max(0, absoluteTop - 20), behavior: 'smooth' });
+              } catch (_) { /* ignore */ }
+            }, 120);
+          }
+        } catch (e) { /* ignore */ }
+      }, 200);
 
       // Generate AI summary
       await generateAISummary(results);
@@ -426,7 +445,7 @@ function QuantumAnalysisPage() {
         </div>
 
         {analysisResults && (
-          <div className="results-section">
+          <div className="results-section" ref={resultsRef}>
             <div className="results-header">
               <h2>⚛️ Quantum Chemistry Results</h2>
               <div className="result-actions">
