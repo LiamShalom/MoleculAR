@@ -88,6 +88,7 @@
   display: flex;
   gap: 10px;
 }
+
 .controls button {
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   color: #021018;
@@ -98,3 +99,30 @@
   font-weight: 700;
 }
 .controls button:hover { transform: translateY(-2px) }
+
+.representation-select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 16px;
+}
+
+.representation-select label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #cfd9e0;
+  justify-content: left;
+}
+
+.representation-select select {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #021018;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  appearance: none; /* Removes default arrow styling */
+  text-align: center;
+  transition: transform 0.1s ease-in-out, box-shadow 0.2s ease;
+}
