@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+        <key>UTImportedTypeDeclarations</key>
+        <array>
+            <dict>
+                <key>UTImportedTypeDeclarations</key>
+                <array>
+                    <dict>
+                        <key>UTTypeIdentifier</key>
+                        <string>public.pdb-file</string>
+                        <key>UTTypeTagSpecification</key>
+                        <dict>
+                            <key>public.filename-extension</key>
+                            <array>
+                                <string>pdb</string>
+                            </array>
+                        </dict>
+                        <key>UTTypeConformsTo</key>
+                        <array>
+                            <string>public.data</string>
+                        </array>
+                        <key>UTTypeDescription</key>
+                        <string>Protein Data Bank File</string>
+                    </dict>
+                </array>
+                <key>UTTypeIdentifier</key>
+                <string>com.pixar.universal-scene-description-mobile</string>
+                <key>UTTypeTagSpecification</key>
+                <dict>
+                    <key>public.filename-extension</key>
+                    <array>
+                        <string>usdz</string>
+                    </array>
+                </dict>
+                <key>UTTypeConformsTo</key>
+                <array>
+                    <string>public.data</string>
+                </array>
+                <key>UTTypeDescription</key>
+                <string>Universal Scene Description</string>
+            </dict>
+        </array>
+		<key>UIApplicationPreferredDefaultSceneSessionRole</key>
+		<string>UIWindowSceneSessionRoleApplication</string>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict/>
+	</dict>
+</dict>
+</plist>
