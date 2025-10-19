@@ -15,3 +15,4 @@ gunicorn
 elevenlabs
 google-generativeai
 statsig
+rdkit
