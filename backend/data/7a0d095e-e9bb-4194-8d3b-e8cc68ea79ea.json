@@ -1,0 +1,83 @@
+{
+  "input_type": "smiles",
+  "molecular_data": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+  "quantum_results": {
+    "stability": -115.2,
+    "homo_lumo_gap": 6.03,
+    "binding_potential": -14.1,
+    "dipole_moment": 7.19,
+    "polarizability": 49.5,
+    "electronic_energy": -110.03,
+    "vibrational_frequencies": {
+      "lowest": 52.66084840722948,
+      "highest": 3230.160564217177,
+      "average": 1996.3016834950895
+    },
+    "molecular_orbitals": {
+      "homo_energy": -0.11256555794449463,
+      "lumo_energy": 0.3346987438612613,
+      "homo_lumo_gap": 6.032740661502662
+    },
+    "solvation_energy": -6.2,
+    "binding_affinity": {
+      "primary_target": {
+        "name": "Enzyme",
+        "affinity": -9.96802169736302
+      },
+      "secondary_targets": [
+        {
+          "name": "Receptor",
+          "affinity": -8.55923269259649
+        },
+        {
+          "name": "Kinase",
+          "affinity": -7.546266147773739
+        }
+      ],
+      "all_targets": [
+        {
+          "name": "Enzyme",
+          "affinity": -9.96802169736302
+        },
+        {
+          "name": "Receptor",
+          "affinity": -8.55923269259649
+        },
+        {
+          "name": "Kinase",
+          "affinity": -7.546266147773739
+        },
+        {
+          "name": "GPCR",
+          "affinity": -6.862908321620822
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -3.7451105029677327
+        }
+      ]
+    },
+    "simulation_method": "DFT/B3LYP/6-31G*",
+    "convergence": "Converged",
+    "cpu_time": "45.2 seconds"
+  },
+  "properties": {
+    "molecular_weight": 289.34,
+    "logp": 3.7,
+    "tpsa": 54.88,
+    "hbd": 1,
+    "hba": 3,
+    "rotatable_bonds": 3,
+    "lipinski_violations": 0,
+    "formal_charge": 0,
+    "num_atoms": 22,
+    "num_bonds": 24,
+    "num_rings": 3,
+    "aromatic_atoms": 3,
+    "drug_likeness_score": 100
+  },
+  "ml_predictions": {
+    "error": "ML prediction failed: 'drug_likeness'"
+  },
+  "timestamp": "2025-10-19T05:37:13.337Z"
+}

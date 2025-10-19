@@ -1,0 +1,24 @@
+# System Requirements
+# Python >= 3.8
+# Node.js >= 16.0.0
+# npm >= 8.0.0
+
+# Backend Dependencies (installed via backend/requirements.txt)
+# FastAPI
+# Uvicorn
+# Pydantic
+# RDKit
+# NumPy
+# Pandas
+# Scikit-learn
+
+# Frontend Dependencies (installed via molviz/package.json)
+# React
+# 3Dmol.js
+# Lucide React
+# Axios
+
+# Development Tools
+# Git
+# Docker (optional)
+# VS Code (recommended)

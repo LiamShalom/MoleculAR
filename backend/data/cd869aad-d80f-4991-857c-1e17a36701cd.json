@@ -1,0 +1,105 @@
+{
+  "input_type": "smiles",
+  "molecular_data": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3",
+  "quantum_results": {
+    "stability": -83.4,
+    "homo_lumo_gap": 2.42,
+    "binding_potential": -8.4,
+    "dipole_moment": 5.42,
+    "polarizability": 35.8,
+    "electronic_energy": -88.69,
+    "vibrational_frequencies": {
+      "lowest": 157.19119081897793,
+      "highest": 3157.437924862506,
+      "average": 1977.7333603558088
+    },
+    "molecular_orbitals": {
+      "homo_energy": -0.23131776587910147,
+      "lumo_energy": 0.2608501363742216,
+      "homo_lumo_gap": 2.420820987494933
+    },
+    "solvation_energy": -8.2,
+    "binding_affinity": {
+      "primary_target": {
+        "name": "Kinase",
+        "affinity": -10.606750391675813
+      },
+      "secondary_targets": [
+        {
+          "name": "Enzyme",
+          "affinity": -8.11915134755407
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -6.292833698084376
+        }
+      ],
+      "all_targets": [
+        {
+          "name": "Kinase",
+          "affinity": -10.606750391675813
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -8.11915134755407
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -6.292833698084376
+        },
+        {
+          "name": "GPCR",
+          "affinity": -5.376158417901598
+        },
+        {
+          "name": "Receptor",
+          "affinity": -4.279370113540117
+        }
+      ]
+    },
+    "simulation_method": "DFT/B3LYP/6-31G*",
+    "convergence": "Converged",
+    "cpu_time": "45.2 seconds",
+    "visualization": {
+      "cif_content": "data_00E56E52\n#\n_entry.id   00E56E52\n#\n_audit_conform.dict_name       mmcif_pdbx.dic\n_audit_conform.dict_version    5.406\n_audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic\n#\n_chem_comp.id                  00E56E52\n_chem_comp.name                'Generated from SMILES'\n_chem_comp.type                'non-polymer'\n_chem_comp.formula             'C18H15N3O'\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.label_alt_id\n_atom_site.label_comp_id\n_atom_site.label_asym_id\n_atom_site.label_entity_id\n_atom_site.label_seq_id\n_atom_site.pdbx_PDB_ins_code\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\n_atom_site.pdbx_formal_charge\n_atom_site.auth_seq_id\n_atom_site.auth_comp_id\n_atom_site.auth_asym_id\n_atom_site.auth_atom_id\n_atom_site.pdbx_PDB_model_num\n_atom_site.label_seq_id\nHETATM     1 C  C1 . 00E56E52 A 1 1 ?    6.940   -1.386   -0.367 1.00 0.00 ? 1 00E56E52 A C1 1\nHETATM     2 C  C2 . 00E56E52 A 1 1 ?    5.521   -0.901   -0.362 1.00 0.00 ? 1 00E56E52 A C2 1\nHETATM     3 C  C3 . 00E56E52 A 1 1 ?    5.028   -0.130   -1.418 1.00 0.00 ? 1 00E56E52 A C3 1\nHETATM     4 C  C4 . 00E56E52 A 1 1 ?    3.694    0.292   -1.424 1.00 0.00 ? 1 00E56E52 A C4 1\nHETATM     5 C  C5 . 00E56E52 A 1 1 ?    2.827   -0.059   -0.383 1.00 0.00 ? 1 00E56E52 A C5 1\nHETATM     6 C  C6 . 00E56E52 A 1 1 ?    3.317   -0.838    0.665 1.00 0.00 ? 1 00E56E52 A C6 1\nHETATM     7 C  C7 . 00E56E52 A 1 1 ?    4.651   -1.261    0.672 1.00 0.00 ? 1 00E56E52 A C7 1\nHETATM     8 N  N8 . 00E56E52 A 1 1 ?    1.500    0.413   -0.462 1.00 0.00 ? 1 00E56E52 A N8 1\nHETATM     9 C  C9 . 00E56E52 A 1 1 ?    0.457    0.133    0.401 1.00 0.00 ? 1 00E56E52 A C9 1\nHETATM    10 O  O10 . 00E56E52 A 1 1 ?    0.471   -0.633    1.357 1.00 0.00 ? 1 00E56E52 A O10 1\nHETATM    11 C  C11 . 00E56E52 A 1 1 ?   -0.824    0.823    0.080 1.00 0.00 ? 1 00E56E52 A C11 1\nHETATM    12 C  C12 . 00E56E52 A 1 1 ?   -2.026    0.131    0.302 1.00 0.00 ? 1 00E56E52 A C12 1\nHETATM    13 C  C13 . 00E56E52 A 1 1 ?   -3.273    0.721    0.026 1.00 0.00 ? 1 00E56E52 A C13 1\nHETATM    14 C  C14 . 00E56E52 A 1 1 ?   -3.263    2.034   -0.485 1.00 0.00 ? 1 00E56E52 A C14 1\nHETATM    15 C  C15 . 00E56E52 A 1 1 ?   -2.072    2.736   -0.690 1.00 0.00 ? 1 00E56E52 A C15 1\nHETATM    16 C  C16 . 00E56E52 A 1 1 ?   -0.850    2.135   -0.401 1.00 0.00 ? 1 00E56E52 A C16 1\nHETATM    17 C  C17 . 00E56E52 A 1 1 ?   -4.548    0.010    0.250 1.00 0.00 ? 1 00E56E52 A C17 1\nHETATM    18 C  C18 . 00E56E52 A 1 1 ?   -4.730   -0.972    1.225 1.00 0.00 ? 1 00E56E52 A C18 1\nHETATM    19 N  N19 . 00E56E52 A 1 1 ?   -5.904   -1.625    1.425 1.00 0.00 ? 1 00E56E52 A N19 1\nHETATM    20 C  C20 . 00E56E52 A 1 1 ?   -6.912   -1.257    0.607 1.00 0.00 ? 1 00E56E52 A C20 1\nHETATM    21 C  C21 . 00E56E52 A 1 1 ?   -6.755   -0.281   -0.360 1.00 0.00 ? 1 00E56E52 A C21 1\nHETATM    22 N  N22 . 00E56E52 A 1 1 ?   -5.585    0.369   -0.556 1.00 0.00 ? 1 00E56E52 A N22 1\nHETATM    23 H  H23 . 00E56E52 A 1 1 ?    7.003   -2.354   -0.873 1.00 0.00 ? 1 00E56E52 A H23 1\nHETATM    24 H  H24 . 00E56E52 A 1 1 ?    7.319   -1.495    0.654 1.00 0.00 ? 1 00E56E52 A H24 1\nHETATM    25 H  H25 . 00E56E52 A 1 1 ?    7.594   -0.674   -0.882 1.00 0.00 ? 1 00E56E52 A H25 1\nHETATM    26 H  H26 . 00E56E52 A 1 1 ?    5.678    0.148   -2.244 1.00 0.00 ? 1 00E56E52 A H26 1\nHETATM    27 H  H27 . 00E56E52 A 1 1 ?    3.348    0.895   -2.259 1.00 0.00 ? 1 00E56E52 A H27 1\nHETATM    28 H  H28 . 00E56E52 A 1 1 ?    2.687   -1.136    1.497 1.00 0.00 ? 1 00E56E52 A H28 1\nHETATM    29 H  H29 . 00E56E52 A 1 1 ?    5.003   -1.875    1.498 1.00 0.00 ? 1 00E56E52 A H29 1\nHETATM    30 H  H30 . 00E56E52 A 1 1 ?    1.282    0.964   -1.282 1.00 0.00 ? 1 00E56E52 A H30 1\nHETATM    31 H  H31 . 00E56E52 A 1 1 ?   -1.967   -0.890    0.676 1.00 0.00 ? 1 00E56E52 A H31 1\nHETATM    32 H  H32 . 00E56E52 A 1 1 ?   -4.207    2.528   -0.718 1.00 0.00 ? 1 00E56E52 A H32 1\nHETATM    33 H  H33 . 00E56E52 A 1 1 ?   -2.106    3.756   -1.066 1.00 0.00 ? 1 00E56E52 A H33 1\nHETATM    34 H  H34 . 00E56E52 A 1 1 ?    0.064    2.708   -0.530 1.00 0.00 ? 1 00E56E52 A H34 1\nHETATM    35 H  H35 . 00E56E52 A 1 1 ?   -3.933   -1.264    1.901 1.00 0.00 ? 1 00E56E52 A H35 1\nHETATM    36 H  H36 . 00E56E52 A 1 1 ?   -7.856   -1.769    0.752 1.00 0.00 ? 1 00E56E52 A H36 1\nHETATM    37 H  H37 . 00E56E52 A 1 1 ?   -7.573    0.007   -1.010 1.00 0.00 ? 1 00E56E52 A H37 1\n# \n",
+      "format": "mmcif",
+      "has_3d_coords": true
+    },
+    "molecular_analogs": [
+      {
+        "name": "Analog 1",
+        "cif_content": "data_00E56E52_A1\n#\n_entry.id   00E56E52_A1\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    7.029    0.881   -0.043 1.00 0.00\nHETATM     2 C  C2    5.569    0.548    0.041 1.00 0.00\nHETATM     3 C  C3    5.078   -0.239    1.087 1.00 0.00\nHETATM     4 C  C4    3.721   -0.572    1.144 1.00 0.00\nHETATM     5 C  C5    2.833   -0.133    0.155 1.00 0.00\nHETATM     6 C  C6    3.328    0.636   -0.898 1.00 0.00\nHETATM     7 C  C7    4.686    0.971   -0.956 1.00 0.00\nHETATM     8 N  N8    1.482   -0.518    0.284 1.00 0.00\nHETATM     9 C  C9    0.422   -0.145   -0.522 1.00 0.00\nHETATM    10 O  O10    0.446    0.645   -1.458 1.00 0.00\nHETATM    11 C  C11   -0.887   -0.756   -0.158 1.00 0.00\nHETATM    12 C  C12   -2.047    0.022   -0.306 1.00 0.00\nHETATM    13 C  C13   -3.318   -0.491    0.013 1.00 0.00\nHETATM    14 C  C14   -3.375   -1.814    0.491 1.00 0.00\nHETATM    15 C  C15   -2.227   -2.601    0.624 1.00 0.00\nHETATM    16 C  C16   -0.981   -2.076    0.292 1.00 0.00\nHETATM    17 C  C17   -4.550    0.310   -0.134 1.00 0.00\nHETATM    18 C  C18   -4.708    1.329   -1.075 1.00 0.00\nHETATM    19 N  N19   -5.843    2.065   -1.204 1.00 0.00\nHETATM    20 C  C20   -6.835    1.743   -0.349 1.00 0.00\nHETATM    21 C  C21   -6.703    0.733    0.585 1.00 0.00\nHETATM    22 N  N22   -5.572    0.000    0.711 1.00 0.00\nHETATM    23 H  H23    7.181    1.847   -0.537 1.00 0.00\nHETATM    24 H  H24    7.472    0.954    0.956 1.00 0.00\nHETATM    25 H  H25    7.557    0.108   -0.609 1.00 0.00\nHETATM    26 H  H26    5.748   -0.597    1.865 1.00 0.00\nHETATM    27 H  H27    3.374   -1.180    1.975 1.00 0.00\nHETATM    28 H  H28    2.685    0.990   -1.698 1.00 0.00\nHETATM    29 H  H29    5.044    1.567   -1.793 1.00 0.00\nHETATM    30 H  H30    1.264   -1.075    1.100 1.00 0.00\nHETATM    31 H  H31   -1.936    1.047   -0.659 1.00 0.00\nHETATM    32 H  H32   -4.339   -2.250    0.756 1.00 0.00\nHETATM    33 H  H33   -2.314   -3.626    0.976 1.00 0.00\nHETATM    34 H  H34   -0.103   -2.712    0.364 1.00 0.00\nHETATM    35 H  H35   -3.924    1.586   -1.780 1.00 0.00\nHETATM    36 H  H36   -7.748    2.321   -0.437 1.00 0.00\nHETATM    37 H  H37   -7.509    0.482    1.265 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3"
+      },
+      {
+        "name": "Analog 2",
+        "cif_content": "data_00E56E52_A2\n#\n_entry.id   00E56E52_A2\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.595    0.835   -0.955 1.00 0.00\nHETATM     2 C  C2    5.170    0.531   -0.601 1.00 0.00\nHETATM     3 C  C3    4.246    1.563   -0.417 1.00 0.00\nHETATM     4 C  C4    2.926    1.275   -0.056 1.00 0.00\nHETATM     5 C  C5    2.509   -0.047    0.141 1.00 0.00\nHETATM     6 C  C6    3.435   -1.075   -0.032 1.00 0.00\nHETATM     7 C  C7    4.756   -0.788   -0.394 1.00 0.00\nHETATM     8 N  N8    1.159   -0.252    0.496 1.00 0.00\nHETATM     9 C  C9    0.550   -1.451    0.818 1.00 0.00\nHETATM    10 O  O10    1.084   -2.547    0.929 1.00 0.00\nHETATM    11 C  C11   -0.911   -1.349    1.094 1.00 0.00\nHETATM    12 C  C12   -1.747   -0.530    0.316 1.00 0.00\nHETATM    13 C  C13   -3.128   -0.442    0.577 1.00 0.00\nHETATM    14 C  C14   -3.635   -1.222    1.636 1.00 0.00\nHETATM    15 C  C15   -2.810   -2.053    2.401 1.00 0.00\nHETATM    16 C  C16   -1.448   -2.120    2.127 1.00 0.00\nHETATM    17 C  C17   -4.033    0.410   -0.224 1.00 0.00\nHETATM    18 C  C18   -3.628    1.575   -0.879 1.00 0.00\nHETATM    19 N  N19   -4.460    2.354   -1.616 1.00 0.00\nHETATM    20 C  C20   -5.739    1.928   -1.678 1.00 0.00\nHETATM    21 C  C21   -6.164    0.784   -1.031 1.00 0.00\nHETATM    22 N  N22   -5.331    0.011   -0.295 1.00 0.00\nHETATM    23 H  H23    7.187    0.967   -0.044 1.00 0.00\nHETATM    24 H  H24    7.032    0.025   -1.547 1.00 0.00\nHETATM    25 H  H25    6.662    1.748   -1.556 1.00 0.00\nHETATM    26 H  H26    4.546    2.599   -0.555 1.00 0.00\nHETATM    27 H  H27    2.234    2.103    0.073 1.00 0.00\nHETATM    28 H  H28    3.163   -2.117    0.106 1.00 0.00\nHETATM    29 H  H29    5.459   -1.611   -0.513 1.00 0.00\nHETATM    30 H  H30    0.603    0.587    0.592 1.00 0.00\nHETATM    31 H  H31   -1.319    0.000   -0.532 1.00 0.00\nHETATM    32 H  H32   -4.700   -1.194    1.867 1.00 0.00\nHETATM    33 H  H33   -3.235   -2.652    3.202 1.00 0.00\nHETATM    34 H  H34   -0.807   -2.774    2.714 1.00 0.00\nHETATM    35 H  H35   -2.608    1.939   -0.825 1.00 0.00\nHETATM    36 H  H36   -6.418    2.536   -2.264 1.00 0.00\nHETATM    37 H  H37   -7.195    0.452   -1.085 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3"
+      },
+      {
+        "name": "Analog 3",
+        "cif_content": "data_00E56E52_A3\n#\n_entry.id   00E56E52_A3\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    6.391    1.920   -0.122 1.00 0.00\nHETATM     2 C  C2    5.034    1.291   -0.016 1.00 0.00\nHETATM     3 C  C3    4.097    1.442   -1.042 1.00 0.00\nHETATM     4 C  C4    2.822    0.880   -0.924 1.00 0.00\nHETATM     5 C  C5    2.457    0.164    0.223 1.00 0.00\nHETATM     6 C  C6    3.387    0.030    1.254 1.00 0.00\nHETATM     7 C  C7    4.663    0.593    1.137 1.00 0.00\nHETATM     8 N  N8    1.151   -0.367    0.263 1.00 0.00\nHETATM     9 C  C9    0.593   -1.154    1.254 1.00 0.00\nHETATM    10 O  O10    1.153   -1.591    2.252 1.00 0.00\nHETATM    11 C  C11   -0.832   -1.528    1.030 1.00 0.00\nHETATM    12 C  C12   -1.741   -0.643    0.430 1.00 0.00\nHETATM    13 C  C13   -3.086   -1.005    0.213 1.00 0.00\nHETATM    14 C  C14   -3.486   -2.290    0.626 1.00 0.00\nHETATM    15 C  C15   -2.591   -3.168    1.246 1.00 0.00\nHETATM    16 C  C16   -1.268   -2.785    1.453 1.00 0.00\nHETATM    17 C  C17   -4.015   -0.058   -0.433 1.00 0.00\nHETATM    18 C  C18   -5.389   -0.026   -0.186 1.00 0.00\nHETATM    19 N  N19   -6.240    0.844   -0.788 1.00 0.00\nHETATM    20 C  C20   -5.665    1.704   -1.654 1.00 0.00\nHETATM    21 C  C21   -4.306    1.695   -1.907 1.00 0.00\nHETATM    22 N  N22   -3.458    0.825   -1.307 1.00 0.00\nHETATM    23 H  H23    7.136    1.336    0.427 1.00 0.00\nHETATM    24 H  H24    6.366    2.935    0.286 1.00 0.00\nHETATM    25 H  H25    6.720    1.966   -1.165 1.00 0.00\nHETATM    26 H  H26    4.352    1.998   -1.941 1.00 0.00\nHETATM    27 H  H27    2.120    1.012   -1.743 1.00 0.00\nHETATM    28 H  H28    3.150   -0.503    2.169 1.00 0.00\nHETATM    29 H  H29    5.365    0.477    1.960 1.00 0.00\nHETATM    30 H  H30    0.587   -0.194   -0.559 1.00 0.00\nHETATM    31 H  H31   -1.418    0.358    0.149 1.00 0.00\nHETATM    32 H  H32   -4.504   -2.637    0.461 1.00 0.00\nHETATM    33 H  H33   -2.925   -4.153    1.563 1.00 0.00\nHETATM    34 H  H34   -0.575   -3.470    1.938 1.00 0.00\nHETATM    35 H  H35   -5.860   -0.697    0.523 1.00 0.00\nHETATM    36 H  H36   -6.330    2.406   -2.143 1.00 0.00\nHETATM    37 H  H37   -3.856    2.393   -2.604 1.00 0.00\n",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC(=CC=C2)C3=CN=CC=N3"
+      }
+    ]
+  },
+  "properties": {
+    "molecular_weight": 289.34,
+    "logp": 3.7,
+    "tpsa": 54.88,
+    "hbd": 1,
+    "hba": 3,
+    "rotatable_bonds": 3,
+    "lipinski_violations": 0,
+    "formal_charge": 0,
+    "num_atoms": 22,
+    "num_bonds": 24,
+    "num_rings": 3,
+    "aromatic_atoms": 3,
+    "drug_likeness_score": 100
+  },
+  "ml_predictions": {
+    "error": "ML prediction failed: 'drug_likeness'"
+  },
+  "timestamp": "2025-10-19T05:39:10.469Z"
+}

@@ -1,0 +1,83 @@
+{
+  "input_type": "smiles",
+  "molecular_data": "CCO",
+  "quantum_results": {
+    "stability": -277.5,
+    "homo_lumo_gap": 7.4,
+    "binding_potential": -4.3,
+    "dipole_moment": 7.26,
+    "polarizability": 19.2,
+    "electronic_energy": -111.02,
+    "vibrational_frequencies": {
+      "lowest": 189.80983250793562,
+      "highest": 3380.8438267575875,
+      "average": 1296.5140411817576
+    },
+    "molecular_orbitals": {
+      "homo_energy": -0.12947035702305998,
+      "lumo_energy": 0.1879555941318338,
+      "homo_lumo_gap": 7.398578729172079
+    },
+    "solvation_energy": -12.8,
+    "binding_affinity": {
+      "primary_target": {
+        "name": "Kinase",
+        "affinity": -9.650180542953187
+      },
+      "secondary_targets": [
+        {
+          "name": "GPCR",
+          "affinity": -9.201600337061725
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -8.586538305295774
+        }
+      ],
+      "all_targets": [
+        {
+          "name": "Kinase",
+          "affinity": -9.650180542953187
+        },
+        {
+          "name": "GPCR",
+          "affinity": -9.201600337061725
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -8.586538305295774
+        },
+        {
+          "name": "Receptor",
+          "affinity": -8.006532901800714
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -3.498997261588907
+        }
+      ]
+    },
+    "simulation_method": "DFT/B3LYP/6-31G*",
+    "convergence": "Converged",
+    "cpu_time": "45.2 seconds"
+  },
+  "properties": {
+    "molecular_weight": 46.07,
+    "logp": -0.0,
+    "tpsa": 20.23,
+    "hbd": 1,
+    "hba": 1,
+    "rotatable_bonds": 0,
+    "lipinski_violations": 0,
+    "formal_charge": 0,
+    "num_atoms": 3,
+    "num_bonds": 2,
+    "num_rings": 0,
+    "aromatic_atoms": 0,
+    "drug_likeness_score": 90
+  },
+  "ml_predictions": {
+    "error": "ML prediction failed: 'drug_likeness'"
+  },
+  "timestamp": "2024-01-01T00:00:00Z"
+}

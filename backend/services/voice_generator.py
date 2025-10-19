@@ -1,6 +1,6 @@
 import os
 import requests
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 import logging
 import asyncio
 import aiohttp

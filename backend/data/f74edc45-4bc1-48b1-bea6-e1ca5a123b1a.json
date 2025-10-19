@@ -1,0 +1,105 @@
+{
+  "input_type": "smiles",
+  "molecular_data": "CCO",
+  "quantum_results": {
+    "stability": -63.3,
+    "homo_lumo_gap": 3.62,
+    "binding_potential": -8.3,
+    "dipole_moment": 2.69,
+    "polarizability": 41.5,
+    "electronic_energy": -177.53,
+    "vibrational_frequencies": {
+      "lowest": 111.33080852488021,
+      "highest": 3252.8437773511478,
+      "average": 1039.9701589392896
+    },
+    "molecular_orbitals": {
+      "homo_energy": -0.43530704189768155,
+      "lumo_energy": 0.49821586082470326,
+      "homo_lumo_gap": 3.6156081127567177
+    },
+    "solvation_energy": -18.6,
+    "binding_affinity": {
+      "primary_target": {
+        "name": "Kinase",
+        "affinity": -10.69047304479185
+      },
+      "secondary_targets": [
+        {
+          "name": "GPCR",
+          "affinity": -8.296771786391236
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -8.121547340149116
+        }
+      ],
+      "all_targets": [
+        {
+          "name": "Kinase",
+          "affinity": -10.69047304479185
+        },
+        {
+          "name": "GPCR",
+          "affinity": -8.296771786391236
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -8.121547340149116
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -6.461451339926834
+        },
+        {
+          "name": "Receptor",
+          "affinity": -4.7205997571456715
+        }
+      ]
+    },
+    "simulation_method": "DFT/B3LYP/6-31G*",
+    "convergence": "Converged",
+    "cpu_time": "45.2 seconds",
+    "visualization": {
+      "cif_content": "data_47029B0A\n#\n_entry.id   47029B0A\n#\n_audit_conform.dict_name       mmcif_pdbx.dic\n_audit_conform.dict_version    5.406\n_audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic\n#\n_chem_comp.id                  47029B0A\n_chem_comp.name                'Generated from SMILES'\n_chem_comp.type                'non-polymer'\n_chem_comp.formula             'C2H6O'\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.label_alt_id\n_atom_site.label_comp_id\n_atom_site.label_asym_id\n_atom_site.label_entity_id\n_atom_site.label_seq_id\n_atom_site.pdbx_PDB_ins_code\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\n_atom_site.pdbx_formal_charge\n_atom_site.auth_seq_id\n_atom_site.auth_comp_id\n_atom_site.auth_asym_id\n_atom_site.auth_atom_id\n_atom_site.pdbx_PDB_model_num\n_atom_site.label_seq_id\nHETATM     1 C  C1 . 47029B0A A 1 1 ?   -0.884    0.164   -0.099 1.00 0.00 ? 1 47029B0A A C1 1\nHETATM     2 C  C2 . 47029B0A A 1 1 ?    0.452   -0.388    0.354 1.00 0.00 ? 1 47029B0A A C2 1\nHETATM     3 O  O3 . 47029B0A A 1 1 ?    1.490    0.526    0.029 1.00 0.00 ? 1 47029B0A A O3 1\nHETATM     4 H  H4 . 47029B0A A 1 1 ?   -1.696   -0.522    0.159 1.00 0.00 ? 1 47029B0A A H4 1\nHETATM     5 H  H5 . 47029B0A A 1 1 ?   -1.078    1.135    0.367 1.00 0.00 ? 1 47029B0A A H5 1\nHETATM     6 H  H6 . 47029B0A A 1 1 ?   -0.889    0.324   -1.183 1.00 0.00 ? 1 47029B0A A H6 1\nHETATM     7 H  H7 . 47029B0A A 1 1 ?    0.457   -0.537    1.438 1.00 0.00 ? 1 47029B0A A H7 1\nHETATM     8 H  H8 . 47029B0A A 1 1 ?    0.665   -1.347   -0.128 1.00 0.00 ? 1 47029B0A A H8 1\nHETATM     9 H  H9 . 47029B0A A 1 1 ?    1.484    0.645   -0.936 1.00 0.00 ? 1 47029B0A A H9 1\n# \n",
+      "format": "mmcif",
+      "has_3d_coords": true
+    },
+    "molecular_analogs": [
+      {
+        "name": "Analog 1",
+        "cif_content": "data_47029B0A_A1\n#\n_entry.id   47029B0A_A1\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.879   -0.185   -0.102 1.00 0.00\nHETATM     2 C  C2    0.440    0.505    0.177 1.00 0.00\nHETATM     3 O  O3    1.450   -0.462    0.424 1.00 0.00\nHETATM     4 H  H4   -1.672    0.547   -0.279 1.00 0.00\nHETATM     5 H  H5   -1.167   -0.822    0.740 1.00 0.00\nHETATM     6 H  H6   -0.798   -0.835   -0.980 1.00 0.00\nHETATM     7 H  H7    0.357    1.146    1.060 1.00 0.00\nHETATM     8 H  H8    0.747    1.124   -0.672 1.00 0.00\nHETATM     9 H  H9    1.522   -1.020   -0.369 1.00 0.00\n",
+        "smiles": "CCO"
+      },
+      {
+        "name": "Analog 2",
+        "cif_content": "data_47029B0A_A2\n#\n_entry.id   47029B0A_A2\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.888    0.135   -0.105 1.00 0.00\nHETATM     2 C  C2    0.472   -0.493    0.119 1.00 0.00\nHETATM     3 O  O3    1.402    0.497    0.534 1.00 0.00\nHETATM     4 H  H4   -0.835    0.908   -0.879 1.00 0.00\nHETATM     5 H  H5   -1.620   -0.618   -0.409 1.00 0.00\nHETATM     6 H  H6   -1.242    0.624    0.809 1.00 0.00\nHETATM     7 H  H7    0.417   -1.257    0.899 1.00 0.00\nHETATM     8 H  H8    0.843   -0.962   -0.797 1.00 0.00\nHETATM     9 H  H9    1.451    1.166   -0.170 1.00 0.00\n",
+        "smiles": "CCO"
+      },
+      {
+        "name": "Analog 3",
+        "cif_content": "data_47029B0A_A3\n#\n_entry.id   47029B0A_A3\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.870   -0.206   -0.133 1.00 0.00\nHETATM     2 C  C2    0.519    0.385   -0.249 1.00 0.00\nHETATM     3 O  O3    1.456   -0.440    0.430 1.00 0.00\nHETATM     4 H  H4   -1.601    0.409   -0.666 1.00 0.00\nHETATM     5 H  H5   -0.893   -1.220   -0.546 1.00 0.00\nHETATM     6 H  H6   -1.172   -0.283    0.916 1.00 0.00\nHETATM     7 H  H7    0.556    1.389    0.185 1.00 0.00\nHETATM     8 H  H8    0.821    0.451   -1.298 1.00 0.00\nHETATM     9 H  H9    1.184   -0.485    1.362 1.00 0.00\n",
+        "smiles": "CCO"
+      }
+    ]
+  },
+  "properties": {
+    "molecular_weight": 46.07,
+    "logp": -0.0,
+    "tpsa": 20.23,
+    "hbd": 1,
+    "hba": 1,
+    "rotatable_bonds": 0,
+    "lipinski_violations": 0,
+    "formal_charge": 0,
+    "num_atoms": 3,
+    "num_bonds": 2,
+    "num_rings": 0,
+    "aromatic_atoms": 0,
+    "drug_likeness_score": 90
+  },
+  "ml_predictions": {
+    "error": "ML prediction failed: 'drug_likeness'"
+  },
+  "timestamp": "2024-01-01T00:00:00Z"
+}

@@ -1,0 +1,184 @@
+{
+  "input_type": "smiles",
+  "molecular_data": "CCO",
+  "quantum_results": {
+    "stability": -286.7,
+    "homo_lumo_gap": 6.42,
+    "binding_potential": -5.5,
+    "dipole_moment": 6.86,
+    "polarizability": 40.2,
+    "electronic_energy": -130.65,
+    "vibrational_frequencies": {
+      "lowest": 159.16764782855716,
+      "highest": 3296.0646538929714,
+      "average": 1077.8656037842427
+    },
+    "molecular_orbitals": {
+      "homo_energy": -0.46673170990595075,
+      "lumo_energy": 0.3959179693845748,
+      "homo_lumo_gap": 6.418244079127801
+    },
+    "solvation_energy": -17.7,
+    "binding_affinity": {
+      "primary_target": {
+        "name": "Kinase",
+        "affinity": -11.906091673445799
+      },
+      "secondary_targets": [
+        {
+          "name": "Receptor",
+          "affinity": -8.696319498856631
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -8.238041184434069
+        }
+      ],
+      "all_targets": [
+        {
+          "name": "Kinase",
+          "affinity": -11.906091673445799
+        },
+        {
+          "name": "Receptor",
+          "affinity": -8.696319498856631
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -8.238041184434069
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -7.830942253243041
+        },
+        {
+          "name": "GPCR",
+          "affinity": -4.034620267266143
+        }
+      ]
+    },
+    "simulation_method": "DFT/B3LYP/6-31G*",
+    "convergence": "Converged",
+    "cpu_time": "45.2 seconds",
+    "total_energy_hartree": -130.65,
+    "total_energy_ev": -3555.1694100000004,
+    "formation_energy_kcal_mol": -45.2,
+    "binding_energy": -8.5,
+    "structural_suggestions": [
+      "Consider adding polar groups for improved solubility",
+      "Optimize aromatic ring substitution for better binding",
+      "Modify side chain length for enhanced selectivity"
+    ],
+    "mechanism_timeline": [
+      {
+        "step": 1,
+        "time": "0-5 min",
+        "description": "Initial binding to target site"
+      },
+      {
+        "step": 2,
+        "time": "5-15 min",
+        "description": "Conformational changes in protein"
+      },
+      {
+        "step": 3,
+        "time": "15-30 min",
+        "description": "Inhibition of kinase activity"
+      },
+      {
+        "step": 4,
+        "time": "30-60 min",
+        "description": "Downstream signaling effects"
+      }
+    ],
+    "confidence_validation": {
+      "quantum_accuracy": "95%",
+      "experimental_validation": "Pending",
+      "literature_support": "Strong",
+      "confidence_level": "High",
+      "model_confidence": "94.2%",
+      "simulation_mode": "DFT/B3LYP/6-31G*",
+      "validation_status": "Converged",
+      "simulation_details": {
+        "method": "Density Functional Theory",
+        "basis_set": "6-31G*",
+        "convergence_criteria": "1e-6",
+        "scf_cycles": "12",
+        "optimization_status": "Converged"
+      }
+    },
+    "visualization": {
+      "cif_content": "data_47029B0A\n#\n_entry.id   47029B0A\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.868   -0.213   -0.140 1.00 0.00\nHETATM     2 C  C2    0.444    0.532   -0.002 1.00 0.00\nHETATM     3 O  O3    1.531   -0.377   -0.106 1.00 0.00\nHETATM     4 H  H4   -0.969   -0.967    0.648 1.00 0.00\nHETATM     5 H  H5   -0.911   -0.743   -1.096 1.00 0.00\nHETATM     6 H  H6   -1.715    0.476   -0.078 1.00 0.00\nHETATM     7 H  H7    0.506    1.044    0.963 1.00 0.00\nHETATM     8 H  H8    0.546    1.278   -0.796 1.00 0.00\nHETATM     9 H  H9    1.437   -1.029    0.609 1.00 0.00\n# \n",
+      "format": "mmcif",
+      "has_3d_coords": true,
+      "charge_map": {
+        "C1": -0.15,
+        "C2": 0.12,
+        "O3": -0.45,
+        "H4": 0.08,
+        "H5": 0.08,
+        "H6": 0.08,
+        "H7": 0.08,
+        "H8": 0.08,
+        "H9": 0.08
+      },
+      "hbond_donors": [
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9"
+      ],
+      "hbond_acceptors": [
+        "O3"
+      ]
+    },
+    "molecular_analogs": [
+      {
+        "name": "Analog 1",
+        "cif_content": "data_47029B0A_A1\n#\n_entry.id   47029B0A_A1\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.851   -0.218    0.214 1.00 0.00\nHETATM     2 C  C2    0.403    0.533   -0.185 1.00 0.00\nHETATM     3 O  O3    1.372   -0.375   -0.688 1.00 0.00\nHETATM     4 H  H4   -1.614    0.470    0.589 1.00 0.00\nHETATM     5 H  H5   -1.259   -0.768   -0.640 1.00 0.00\nHETATM     6 H  H6   -0.630   -0.956    0.992 1.00 0.00\nHETATM     7 H  H7    0.830    1.065    0.670 1.00 0.00\nHETATM     8 H  H8    0.179    1.262   -0.969 1.00 0.00\nHETATM     9 H  H9    1.571   -1.013    0.018 1.00 0.00\n",
+        "smiles": "CCO"
+      },
+      {
+        "name": "Analog 2",
+        "cif_content": "data_47029B0A_A2\n#\n_entry.id   47029B0A_A2\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.853    0.300   -0.011 1.00 0.00\nHETATM     2 C  C2    0.492   -0.247    0.421 1.00 0.00\nHETATM     3 O  O3    1.482    0.081   -0.543 1.00 0.00\nHETATM     4 H  H4   -0.802    1.386   -0.143 1.00 0.00\nHETATM     5 H  H5   -1.624    0.070    0.730 1.00 0.00\nHETATM     6 H  H6   -1.152   -0.124   -0.975 1.00 0.00\nHETATM     7 H  H7    0.455   -1.336    0.530 1.00 0.00\nHETATM     8 H  H8    0.792    0.186    1.379 1.00 0.00\nHETATM     9 H  H9    1.211   -0.317   -1.388 1.00 0.00\n",
+        "smiles": "CCO"
+      },
+      {
+        "name": "Analog 3",
+        "cif_content": "data_47029B0A_A3\n#\n_entry.id   47029B0A_A3\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.799    0.387    0.069 1.00 0.00\nHETATM     2 C  C2    0.321   -0.613   -0.129 1.00 0.00\nHETATM     3 O  O3    1.341   -0.046   -0.939 1.00 0.00\nHETATM     4 H  H4   -1.600   -0.041    0.678 1.00 0.00\nHETATM     5 H  H5   -0.427    1.291    0.562 1.00 0.00\nHETATM     6 H  H6   -1.214    0.697   -0.895 1.00 0.00\nHETATM     7 H  H7   -0.052   -1.511   -0.630 1.00 0.00\nHETATM     8 H  H8    0.758   -0.909    0.830 1.00 0.00\nHETATM     9 H  H9    1.672    0.745   -0.481 1.00 0.00\n",
+        "smiles": "CCO"
+      }
+    ],
+    "ml_predictions": {
+      "drug_likeness_score": 0.85,
+      "biological_target": "BCR-ABL Kinase",
+      "binding_energy": -8.2,
+      "admet_prediction": "Good oral bioavailability, moderate clearance"
+    }
+  },
+  "properties": {
+    "molecular_weight": 46.07,
+    "logp": -0.0,
+    "tpsa": 20.23,
+    "hbd": 1,
+    "hba": 1,
+    "rotatable_bonds": 0,
+    "lipinski_violations": 0,
+    "formal_charge": 0,
+    "num_atoms": 3,
+    "num_bonds": 2,
+    "num_rings": 0,
+    "aromatic_atoms": 0,
+    "drug_likeness_score": 90
+  },
+  "ml_predictions": {
+    "error": "ML prediction failed: 'drug_likeness'",
+    "drug_likeness_score": 0.85,
+    "biological_target": "BCR-ABL Kinase",
+    "binding_energy": -8.2,
+    "admet_prediction": "Good oral bioavailability, moderate clearance"
+  },
+  "timestamp": "2024-01-01T00:00:00Z"
+}

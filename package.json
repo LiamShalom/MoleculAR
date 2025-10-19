@@ -1,0 +1,38 @@
+{
+  "name": "dubhacks-25-molecular-analysis",
+  "version": "1.0.0",
+  "description": "Quantum-Enhanced Molecular Analysis Platform for Drug Discovery",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./setup.sh",
+    "dev": "./dev.sh",
+    "deploy": "./deploy.sh",
+    "build": "./build.sh",
+    "install-backend": "cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
+    "install-frontend": "cd molviz && npm install",
+    "start-backend": "cd backend && source venv/bin/activate && python start.py",
+    "start-frontend": "cd molviz && npm start",
+    "build-frontend": "cd molviz && npm run build"
+  },
+  "keywords": [
+    "molecular-analysis",
+    "quantum-chemistry",
+    "drug-discovery",
+    "machine-learning",
+    "react",
+    "fastapi",
+    "3d-visualization"
+  ],
+  "author": "Dubhacks 2025 Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/dubhacks-25.git"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "python": ">=3.8.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

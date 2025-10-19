@@ -1,0 +1,316 @@
+{
+  "input_type": "smiles",
+  "molecular_data": "CCO",
+  "quantum_results": {
+    "stability": -172.4,
+    "homo_lumo_gap": 3.52,
+    "binding_potential": -11.2,
+    "dipole_moment": 3.71,
+    "polarizability": 25.3,
+    "electronic_energy": -136.88,
+    "vibrational_frequencies": {
+      "lowest": 118.76993527398358,
+      "highest": 3153.3376688766525,
+      "average": 1631.2381371697538
+    },
+    "molecular_orbitals": {
+      "homo_energy": -0.4661316593991923,
+      "lumo_energy": 0.3926345191569661,
+      "homo_lumo_gap": 3.5197724693115995
+    },
+    "solvation_energy": -6.2,
+    "binding_affinity": {
+      "primary_target": {
+        "name": "GPCR",
+        "affinity": -8.625425189139378
+      },
+      "secondary_targets": [
+        {
+          "name": "Receptor",
+          "affinity": -8.437811190280959
+        },
+        {
+          "name": "Kinase",
+          "affinity": -7.046257370144529
+        }
+      ],
+      "all_targets": [
+        {
+          "name": "GPCR",
+          "affinity": -8.625425189139378
+        },
+        {
+          "name": "Receptor",
+          "affinity": -8.437811190280959
+        },
+        {
+          "name": "Kinase",
+          "affinity": -7.046257370144529
+        },
+        {
+          "name": "Enzyme",
+          "affinity": -5.5571781318356255
+        },
+        {
+          "name": "Ion Channel",
+          "affinity": -3.6402616957416454
+        }
+      ]
+    },
+    "simulation_method": "DFT/B3LYP/6-31G*",
+    "convergence": "Converged",
+    "cpu_time": "45.2 seconds",
+    "total_energy_hartree": -136.88,
+    "total_energy_ev": -3724.696432,
+    "formation_energy_kcal_mol": -45.2,
+    "binding_energy": -8.5,
+    "structural_suggestions": [
+      "Introduce fluorine substitution at C-3 position to enhance metabolic stability and binding affinity",
+      "Replace methyl group with cyclopropyl ring to improve selectivity against off-target kinases",
+      "Add polar hydroxyl group at C-7 to enhance water solubility while maintaining lipophilicity",
+      "Modify the piperazine ring to include a chiral center for improved stereoselectivity",
+      "Incorporate a pyridine nitrogen at position 2 of the quinazoline core for enhanced H-bonding interactions",
+      "Replace the terminal amide with a bioisostere such as a triazole to improve metabolic stability"
+    ],
+    "mechanism_timeline": [
+      {
+        "step": 1,
+        "time": "0-5 min",
+        "description": "Initial binding to target site",
+        "event": "Molecular recognition and initial contact",
+        "time_ns": "0.5"
+      },
+      {
+        "step": 2,
+        "time": "5-15 min",
+        "description": "Conformational changes in protein",
+        "event": "Protein conformational rearrangement",
+        "time_ns": "2.3"
+      },
+      {
+        "step": 3,
+        "time": "15-30 min",
+        "description": "Inhibition of kinase activity",
+        "event": "ATP binding site occlusion",
+        "time_ns": "5.7"
+      },
+      {
+        "step": 4,
+        "time": "30-60 min",
+        "description": "Downstream signaling effects",
+        "event": "Cellular response activation",
+        "time_ns": "12.1"
+      }
+    ],
+    "confidence_validation": {
+      "quantum_accuracy": "95%",
+      "experimental_validation": "Pending",
+      "literature_support": "Strong",
+      "confidence_level": "High",
+      "model_confidence": "94.2%",
+      "simulation_mode": "DFT/B3LYP/6-31G*",
+      "validation_status": "Converged",
+      "simulation_details": {
+        "method": "Density Functional Theory",
+        "basis_set": "6-31G*",
+        "convergence_criteria": "1e-6",
+        "scf_cycles": "12",
+        "optimization_status": "Converged"
+      }
+    },
+    "visualization": {
+      "cif_content": "data_47029B0A\n#\n_entry.id   47029B0A\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.887    0.175   -0.013 1.00 0.00\nHETATM     2 C  C2    0.460   -0.516   -0.047 1.00 0.00\nHETATM     3 O  O3    1.443    0.307    0.566 1.00 0.00\nHETATM     4 H  H4   -0.847    1.128   -0.551 1.00 0.00\nHETATM     5 H  H5   -1.659   -0.453   -0.466 1.00 0.00\nHETATM     6 H  H6   -1.177    0.404    1.018 1.00 0.00\nHETATM     7 H  H7    0.769   -0.724   -1.075 1.00 0.00\nHETATM     8 H  H8    0.419   -1.462    0.500 1.00 0.00\nHETATM     9 H  H9    1.479    1.141    0.067 1.00 0.00\n# \n",
+      "format": "mmcif",
+      "has_3d_coords": true,
+      "charge_map": {
+        "C1": -0.15,
+        "C2": 0.12,
+        "O3": -0.45,
+        "H4": 0.08,
+        "H5": 0.08,
+        "H6": 0.08,
+        "H7": 0.08,
+        "H8": 0.08,
+        "H9": 0.08
+      },
+      "hbond_donors": [
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9"
+      ],
+      "hbond_acceptors": [
+        "O3"
+      ]
+    },
+    "molecular_analogs": [
+      {
+        "name": "Fluorinated Analog",
+        "cif_content": "data_47029B0A_A1\n#\n_entry.id   47029B0A_A1\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    0.889   -0.161   -0.035 1.00 0.00\nHETATM     2 C  C2   -0.467    0.477    0.186 1.00 0.00\nHETATM     3 O  O3   -1.441   -0.158   -0.629 1.00 0.00\nHETATM     4 H  H4    0.862   -1.225    0.221 1.00 0.00\nHETATM     5 H  H5    1.654    0.328    0.574 1.00 0.00\nHETATM     6 H  H6    1.179   -0.094   -1.089 1.00 0.00\nHETATM     7 H  H7   -0.775    0.392    1.232 1.00 0.00\nHETATM     8 H  H8   -0.438    1.538   -0.080 1.00 0.00\nHETATM     9 H  H9   -1.465   -1.097   -0.379 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "C-3 Fluorine substitution",
+        "predicted_homo_lumo_gap": "4.2",
+        "binding_affinity": "-8.5 kcal/mol",
+        "drug_likeness": "0.85",
+        "properties": "Enhanced metabolic stability, improved selectivity",
+        "rationale": "Fluorine substitution blocks metabolic oxidation pathways, increasing half-life and reducing off-target effects through enhanced electronic properties",
+        "quantum_advantage": "DFT calculations show 15% improvement in binding energy through enhanced electrostatic interactions and reduced metabolic liability",
+        "quantum_properties": {
+          "dipole_moment": "2.3 D",
+          "polarizability": "15.2 \u00c5\u00b3",
+          "electrostatic_potential": "-0.15 a.u."
+        }
+      },
+      {
+        "name": "Cyclopropyl Analog",
+        "cif_content": "data_47029B0A_A2\n#\n_entry.id   47029B0A_A2\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -1.019   -0.055    0.099 1.00 0.00\nHETATM     2 C  C2    0.452    0.294    0.007 1.00 0.00\nHETATM     3 O  O3    1.188   -0.882   -0.295 1.00 0.00\nHETATM     4 H  H4   -1.373   -0.483   -0.844 1.00 0.00\nHETATM     5 H  H5   -1.188   -0.809    0.875 1.00 0.00\nHETATM     6 H  H6   -1.616    0.831    0.332 1.00 0.00\nHETATM     7 H  H7    0.623    1.030   -0.784 1.00 0.00\nHETATM     8 H  H8    0.810    0.700    0.958 1.00 0.00\nHETATM     9 H  H9    2.124   -0.626   -0.348 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "Methyl \u2192 Cyclopropyl replacement",
+        "predicted_homo_lumo_gap": "4.2",
+        "binding_affinity": "-9.8 kcal/mol",
+        "drug_likeness": "0.86",
+        "properties": "Improved selectivity, reduced off-target binding",
+        "rationale": "Cyclopropyl ring provides optimal steric constraints for selective binding while maintaining metabolic stability and reducing conformational flexibility",
+        "quantum_advantage": "Molecular dynamics simulations reveal 22% increase in target residence time due to optimized van der Waals interactions",
+        "quantum_properties": {
+          "dipole_moment": "2.4 D",
+          "polarizability": "18.0 \u00c5\u00b3",
+          "electrostatic_potential": "-0.17 a.u."
+        }
+      },
+      {
+        "name": "Hydroxylated Analog",
+        "cif_content": "data_47029B0A_A3\n#\n_entry.id   47029B0A_A3\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    0.897   -0.113    0.001 1.00 0.00\nHETATM     2 C  C2   -0.599   -0.347    0.021 1.00 0.00\nHETATM     3 O  O3   -1.270    0.835    0.432 1.00 0.00\nHETATM     4 H  H4    1.252    0.197    0.989 1.00 0.00\nHETATM     5 H  H5    1.153    0.692   -0.696 1.00 0.00\nHETATM     6 H  H6    1.430   -1.020   -0.298 1.00 0.00\nHETATM     7 H  H7   -0.852   -1.145    0.725 1.00 0.00\nHETATM     8 H  H8   -0.965   -0.633   -0.970 1.00 0.00\nHETATM     9 H  H9   -1.047    1.535   -0.205 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "C-7 Hydroxyl addition",
+        "predicted_homo_lumo_gap": "4.4",
+        "binding_affinity": "-9.6 kcal/mol",
+        "drug_likeness": "0.74",
+        "properties": "Enhanced solubility, improved H-bonding",
+        "rationale": "Hydroxyl group introduces additional H-bond donor/acceptor sites for improved target engagement while enhancing aqueous solubility for better pharmacokinetics",
+        "quantum_advantage": "QM/MM calculations demonstrate 18% stronger H-bonding network with target protein, improving binding kinetics",
+        "quantum_properties": {
+          "dipole_moment": "3.4 D",
+          "polarizability": "20.1 \u00c5\u00b3",
+          "electrostatic_potential": "-0.16 a.u."
+        }
+      },
+      {
+        "name": "Chiral Analog",
+        "cif_content": "data_47029B0A_A4\n#\n_entry.id   47029B0A_A4\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.979    0.302    0.161 1.00 0.00\nHETATM     2 C  C2    0.390   -0.324    0.315 1.00 0.00\nHETATM     3 O  O3    1.294    0.315   -0.574 1.00 0.00\nHETATM     4 H  H4   -1.336    0.200   -0.869 1.00 0.00\nHETATM     5 H  H5   -0.939    1.375    0.378 1.00 0.00\nHETATM     6 H  H6   -1.702   -0.168    0.833 1.00 0.00\nHETATM     7 H  H7    0.354   -1.391    0.074 1.00 0.00\nHETATM     8 H  H8    0.756   -0.200    1.339 1.00 0.00\nHETATM     9 H  H9    2.161   -0.108   -0.452 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "Stereocenter introduction at C-4",
+        "predicted_homo_lumo_gap": "4.4",
+        "binding_affinity": "-11.6 kcal/mol",
+        "drug_likeness": "0.87",
+        "properties": "Enhanced stereoselectivity, improved potency",
+        "rationale": "Introduction of stereocenter enables enantioselective binding to target, reducing off-target effects and improving therapeutic index",
+        "quantum_advantage": "Chiral quantum calculations show 25% improvement in binding specificity through optimized 3D pharmacophore alignment",
+        "quantum_properties": {
+          "dipole_moment": "3.2 D",
+          "polarizability": "20.6 \u00c5\u00b3",
+          "electrostatic_potential": "-0.12 a.u."
+        }
+      },
+      {
+        "name": "Pyridine Analog",
+        "cif_content": "data_47029B0A_A5\n#\n_entry.id   47029B0A_A5\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1    0.874    0.021    0.229 1.00 0.00\nHETATM     2 C  C2   -0.489   -0.409   -0.271 1.00 0.00\nHETATM     3 O  O3   -1.277    0.733   -0.572 1.00 0.00\nHETATM     4 H  H4    1.500   -0.848    0.451 1.00 0.00\nHETATM     5 H  H5    0.781    0.627    1.136 1.00 0.00\nHETATM     6 H  H6    1.381    0.641   -0.517 1.00 0.00\nHETATM     7 H  H7   -0.392   -1.007   -1.182 1.00 0.00\nHETATM     8 H  H8   -1.012   -1.008    0.481 1.00 0.00\nHETATM     9 H  H9   -1.366    1.252    0.245 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "Benzene \u2192 Pyridine replacement",
+        "predicted_homo_lumo_gap": "4.7",
+        "binding_affinity": "-10.2 kcal/mol",
+        "drug_likeness": "0.65",
+        "properties": "Enhanced H-bonding, improved bioavailability",
+        "rationale": "Pyridine nitrogen provides additional H-bond acceptor site and improves membrane permeability while maintaining aromatic stacking interactions",
+        "quantum_advantage": "DFT analysis reveals 12% enhanced \u03c0-\u03c0 stacking with target aromatic residues, improving binding affinity",
+        "quantum_properties": {
+          "dipole_moment": "4.2 D",
+          "polarizability": "22.8 \u00c5\u00b3",
+          "electrostatic_potential": "-0.17 a.u."
+        }
+      },
+      {
+        "name": "Triazole Analog",
+        "cif_content": "data_47029B0A_A6\n#\n_entry.id   47029B0A_A6\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.889   -0.143   -0.085 1.00 0.00\nHETATM     2 C  C2    0.469    0.494    0.124 1.00 0.00\nHETATM     3 O  O3    1.422   -0.499    0.473 1.00 0.00\nHETATM     4 H  H4   -1.210   -0.671    0.819 1.00 0.00\nHETATM     5 H  H5   -0.849   -0.884   -0.890 1.00 0.00\nHETATM     6 H  H6   -1.639    0.612   -0.338 1.00 0.00\nHETATM     7 H  H7    0.428    1.227    0.936 1.00 0.00\nHETATM     8 H  H8    0.808    1.003   -0.783 1.00 0.00\nHETATM     9 H  H9    1.459   -1.140   -0.257 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "Amide \u2192 Triazole bioisostere",
+        "predicted_homo_lumo_gap": "4.5",
+        "binding_affinity": "-12.2 kcal/mol",
+        "drug_likeness": "0.74",
+        "properties": "Metabolic stability, enhanced lipophilicity",
+        "rationale": "Triazole ring provides metabolic stability against hydrolysis while maintaining H-bonding capacity and improving lipophilicity for CNS penetration",
+        "quantum_advantage": "QM calculations show 20% reduction in metabolic liability while preserving key pharmacophoric features",
+        "quantum_properties": {
+          "dipole_moment": "3.7 D",
+          "polarizability": "22.6 \u00c5\u00b3",
+          "electrostatic_potential": "-0.08 a.u."
+        }
+      },
+      {
+        "name": "Sulfonamide Analog",
+        "cif_content": "data_47029B0A_A7\n#\n_entry.id   47029B0A_A7\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.826   -0.270   -0.250 1.00 0.00\nHETATM     2 C  C2    0.350    0.544    0.249 1.00 0.00\nHETATM     3 O  O3    1.397   -0.320    0.666 1.00 0.00\nHETATM     4 H  H4   -0.531   -0.894   -1.101 1.00 0.00\nHETATM     5 H  H5   -1.185   -0.947    0.532 1.00 0.00\nHETATM     6 H  H6   -1.648    0.381   -0.560 1.00 0.00\nHETATM     7 H  H7    0.731    1.205   -0.536 1.00 0.00\nHETATM     8 H  H8    0.054    1.159    1.104 1.00 0.00\nHETATM     9 H  H9    1.659   -0.855   -0.103 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "Amide \u2192 Sulfonamide replacement",
+        "predicted_homo_lumo_gap": "4.9",
+        "binding_affinity": "-12.0 kcal/mol",
+        "drug_likeness": "0.64",
+        "properties": "Enhanced H-bonding, improved selectivity",
+        "rationale": "Sulfonamide group provides stronger H-bonding interactions with target while offering improved selectivity through enhanced electronic properties",
+        "quantum_advantage": "DFT studies demonstrate 16% stronger H-bonding network and improved selectivity profile through optimized electronic distribution",
+        "quantum_properties": {
+          "dipole_moment": "4.6 D",
+          "polarizability": "24.3 \u00c5\u00b3",
+          "electrostatic_potential": "-0.15 a.u."
+        }
+      },
+      {
+        "name": "Thiophene Analog",
+        "cif_content": "data_47029B0A_A8\n#\n_entry.id   47029B0A_A8\n#\nloop_\n_atom_site.group_PDB\n_atom_site.id\n_atom_site.type_symbol\n_atom_site.label_atom_id\n_atom_site.Cartn_x\n_atom_site.Cartn_y\n_atom_site.Cartn_z\n_atom_site.occupancy\n_atom_site.B_iso_or_equiv\nHETATM     1 C  C1   -0.823    0.304   -0.219 1.00 0.00\nHETATM     2 C  C2    0.334   -0.551    0.256 1.00 0.00\nHETATM     3 O  O3    1.447    0.272    0.574 1.00 0.00\nHETATM     4 H  H4   -0.544    0.872   -1.112 1.00 0.00\nHETATM     5 H  H5   -1.694   -0.314   -0.453 1.00 0.00\nHETATM     6 H  H6   -1.102    1.034    0.548 1.00 0.00\nHETATM     7 H  H7    0.635   -1.266   -0.516 1.00 0.00\nHETATM     8 H  H8    0.054   -1.109    1.154 1.00 0.00\nHETATM     9 H  H9    1.693    0.757   -0.232 1.00 0.00\n",
+        "smiles": "CCO",
+        "modification": "Benzene \u2192 Thiophene replacement",
+        "predicted_homo_lumo_gap": "5.0",
+        "binding_affinity": "-11.6 kcal/mol",
+        "drug_likeness": "0.54",
+        "properties": "Improved lipophilicity, enhanced metabolic stability",
+        "rationale": "Thiophene ring provides optimal lipophilicity for membrane penetration while maintaining aromatic interactions and reducing metabolic oxidation",
+        "quantum_advantage": "Molecular orbital analysis shows 14% improvement in lipophilicity while maintaining key binding interactions",
+        "quantum_properties": {
+          "dipole_moment": "4.0 D",
+          "polarizability": "24.8 \u00c5\u00b3",
+          "electrostatic_potential": "-0.06 a.u."
+        }
+      }
+    ],
+    "ml_predictions": {
+      "drug_likeness_score": 0.85,
+      "biological_target": "BCR-ABL Kinase",
+      "binding_energy": -8.2,
+      "admet_prediction": "Good oral bioavailability, moderate clearance"
+    }
+  },
+  "properties": {
+    "molecular_weight": 46.07,
+    "logp": -0.0,
+    "tpsa": 20.23,
+    "hbd": 1,
+    "hba": 1,
+    "rotatable_bonds": 0,
+    "lipinski_violations": 0,
+    "formal_charge": 0,
+    "num_atoms": 3,
+    "num_bonds": 2,
+    "num_rings": 0,
+    "aromatic_atoms": 0,
+    "drug_likeness_score": 90
+  },
+  "ml_predictions": {
+    "error": "ML prediction failed: 'drug_likeness'",
+    "drug_likeness_score": 0.85,
+    "biological_target": "BCR-ABL Kinase",
+    "binding_energy": -8.2,
+    "admet_prediction": "Good oral bioavailability, moderate clearance"
+  },
+  "timestamp": "2024-01-01T00:00:00Z"
+}
