@@ -16,6 +16,55 @@
   box-shadow: 0 12px 36px rgba(2,6,12,0.6);
 }
 .controls input[type=file] { color: var(--muted) }
+.controls input[type=file] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 44px;
+  padding: 6px 10px;
+  background: rgba(0,0,0,0.22);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.04);
+  color: rgba(214,247,255,0.95);
+  font-size: 14px;
+  display: inline-block;
+  overflow: hidden;
+  transition: box-shadow .12s ease, transform .12s ease;
+}
+
+/* Modern file selector button styling */
+.controls input[type=file]::-webkit-file-upload-button {
+  margin-right: 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border: none;
+  color: #021018;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.controls input[type=file]::file-selector-button {
+  margin-right: 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border: none;
+  color: #021018;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.controls input[type=file]:hover,
+.controls input[type=file]:focus {
+  box-shadow: 0 10px 30px rgba(78,240,255,0.06);
+  transform: translateY(-2px);
+}
+
+.controls input[type=file]::-webkit-file-upload-button:hover,
+.controls input[type=file]::file-selector-button:hover {
+  box-shadow: 0 10px 30px rgba(78,240,255,0.12);
+}
 .controls textarea {
   height: 48%;
   margin-top: 10px;
