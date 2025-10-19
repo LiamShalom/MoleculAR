@@ -1,0 +1,54 @@
+/* App container */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top navigation */
+.nav {
+  display: flex;
+  gap: 18px;
+  padding: 14px 20px;
+  background: linear-gradient(90deg, rgba(10,18,28,0.6), rgba(6,10,18,0.3));
+  box-shadow: 0 6px 24px rgba(4,12,20,0.6), inset 0 -1px 0 rgba(255,255,255,0.02);
+  backdrop-filter: blur(6px) saturate(120%);
+  align-items: center;
+}
+.nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all .18s ease;
+  box-shadow: 0 2px 8px rgba(78,240,255,0.06);
+}
+.nav a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(78,240,255,0.12);
+}
+
+.main { padding: 14px; flex: 1; }
+
+/* subtle animated molecular background in viewer areas */
+.molecule-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 10% 10%, rgba(78,240,255,0.03), transparent 5%),
+                    radial-gradient(circle at 90% 90%, rgba(155,92,255,0.03), transparent 7%);
+  pointer-events: none;
+}
+
+/* simple animation for logos if present */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

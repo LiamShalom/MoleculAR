@@ -1,0 +1,21 @@
+/* Minimal styling for Home page */
+.home {
+  padding: 36px;
+  max-width: 900px;
+  margin: 20px auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(2,6,12,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+  border: 1px solid var(--glass-2);
+}
+.home h1 {
+  margin-bottom: 8px;
+  color: var(--accent-2);
+  letter-spacing: 0.6px;
+}
+.home section {
+  margin-top: 18px;
+}
+.home p { color: var(--muted); line-height: 1.6 }
+.home h2 { color: #bfefff }
+.home ol, .home ul { color: rgba(214,247,255,0.85) }

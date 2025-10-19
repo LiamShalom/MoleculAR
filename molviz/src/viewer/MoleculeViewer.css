@@ -1,0 +1,14 @@
+.molecule-viewer-root { height: 100%; position: relative; background: radial-gradient(circle at 20% 10%, rgba(78,240,255,0.03), transparent 6%); }
+.molecule-canvas { width: 100%; height: 100%; display: block; }
+.hint { position: absolute; left: 16px; bottom: 16px; color: rgba(214,247,255,0.85); font-size: 13px; background: rgba(0,0,0,0.28); padding: 6px 8px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.03); }
+
+/* subtle grid overlay */
+.molecule-viewer-root::before{
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	inset: 0;
+	background-image: linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
+	background-size: 240px 240px, 240px 240px;
+	opacity: 0.18;
+}

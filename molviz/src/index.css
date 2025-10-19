@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(1200px 800px at 10% 10%, rgba(9,29,42,0.6), transparent 8%),
+              radial-gradient(1000px 600px at 90% 90%, rgba(22,6,47,0.55), transparent 10%),
+              linear-gradient(180deg, #061017 0%, #07121a 50%, #02040a 100%);
+  color: #d6f7ff;
+  min-height: 100vh;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+}
+
+:root{
+  --accent: #4ef0ff; /* cyan */
+  --accent-2: #9b5cff; /* magenta */
+  --glass: rgba(255,255,255,0.04);
+  --glass-2: rgba(255,255,255,0.02);
+  --muted: rgba(214,247,255,0.7);
+}
