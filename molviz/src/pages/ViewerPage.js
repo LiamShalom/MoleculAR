@@ -1,10 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import MoleculeViewer from '../viewer/MoleculeViewer';
 import './ViewerPage.css';
 
 export default function ViewerPage() {
   const [pdbText, setPdbText] = useState('');
   const [fileName, setFileName] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state && location.state.cifText) {
+      setPdbText(location.state.cifText);
+      setFileName(location.state.fileName || 'example.cif');
+      // Auto-load the structure
+      setTimeout(() => {
+        const content = location.state.cifText;
+        const name = location.state.fileName || 'example.cif';
+        function detectFormat(name, text) {
+          if (name) {
+            const ext = name.split('.').pop().toLowerCase();
+            if (ext === 'cif' || ext === 'mmcif') return 'cif';
+            if (ext === 'pdb' || ext === 'ent' || ext === 'txt') return 'pdb';
+          }
+          const t = (text || '').trim();
+          if (!t) return 'pdb';
+          if (t.startsWith('data_') || t.includes('_atom_site.')) return 'cif';
+          if (t.split('\n')[0].startsWith('HEADER') || t.includes('ATOM') || t.includes('HETATM')) return 'pdb';
+          return 'pdb';
+        }
+        const format = detectFormat(name, content);
+        window.dispatchEvent(new CustomEvent('loadStructure', { detail: { content, name, format } }));
+      }, 0);
+    }
+  }, [location.state]);
 
   function handleFile(e) {
     const f = e.target.files && e.target.files[0];
@@ -30,6 +58,9 @@ export default function ViewerPage() {
           <button onClick={() => {
             const content = pdbText;
             const name = fileName;
+            // Get selected representation
+            const repSelect = document.getElementById('representation');
+            const representation = repSelect ? repSelect.value : 'cartoon';
             // basic format detection by filename or content
             function detectFormat(name, text) {
               if (name) {
@@ -46,6 +77,7 @@ export default function ViewerPage() {
 
             const format = detectFormat(name, content);
             window.dispatchEvent(new CustomEvent('loadStructure', { detail: { content, name, format } }));
+            window.dispatchEvent(new CustomEvent('changeRepresentation', { detail: representation }));
           }}>
             Load
           </button>
@@ -57,7 +89,7 @@ export default function ViewerPage() {
             Clear
           </button>
         </div>
-        <div className="representation-select">
+        <div className="representation-dropdown">
           <label htmlFor="representation">Representation:</label>
           <select
             id="representation"

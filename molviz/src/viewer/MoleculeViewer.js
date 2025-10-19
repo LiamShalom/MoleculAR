@@ -134,12 +134,11 @@ export default function MoleculeViewer() {
         const model = v.addModel(content, fmt);
         currentModelRef.current = { model, content, format: fmt };
         v.setBackgroundColor(0x000000);
-        applyRepresentation(v, 'ballstick');  // Use ballstick for small molecules
+        applyRepresentation(v, 'cartoon');
         v.zoomTo();
         v.render();
 
-        // Enable auto-rotation for a nice visual effect
-        v.spin('y', 0.5); // Rotate around Y-axis at 0.5 degrees per frame
+  // No auto-rotation
       } catch (err) {
         console.error('failed to load structure', err);
         console.error('Format:', format, 'Content length:', content?.length);
