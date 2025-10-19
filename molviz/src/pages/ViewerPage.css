@@ -66,7 +66,7 @@
   box-shadow: 0 10px 30px rgba(78,240,255,0.12);
 }
 .controls textarea {
-  height: 48%;
+  height: 40%;
   margin-top: 10px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;
   font-size: 13px;
@@ -94,35 +94,37 @@
   color: #021018;
   border: none;
   padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: 8px; 
   cursor: pointer;
   font-weight: 700;
 }
 .controls button:hover { transform: translateY(-2px) }
 
-.representation-select {
+.representation-dropdown {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  gap: 16px;
+  gap: 8px;
+  border: none;
+  background: none;
 }
 
-.representation-select label {
+.representation-dropdown label {
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: #cfd9e0;
-  justify-content: left;
+  text-align: left;
 }
 
-.representation-select select {
+.representation-dropdown select {
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   color: #021018;
-  border: none;
+  border: 0;
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
   appearance: none; /* Removes default arrow styling */
-  text-align: center;
+  text-align: left;
   transition: transform 0.1s ease-in-out, box-shadow 0.2s ease;
 }
