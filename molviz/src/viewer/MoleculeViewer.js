@@ -17,7 +17,6 @@ export default function MoleculeViewer() {
         viewer.setStyle({}, {
           cartoon: {
             color: "spectrum",   // rainbow by residue index
-            arrows: true,        // shows direction of beta strands
             opacity: 1.0,        // fully opaque
             thickness: 0.4       // controls ribbon thickness
           }
@@ -65,26 +64,11 @@ export default function MoleculeViewer() {
           const colorSchemes = ['RWB', 'greenCarbon', 'Jmol', 'whiteCarbon'];
           const scheme = colorSchemes[i % colorSchemes.length];
 
-          if (window.volumedata) {
-            const data = new window.$3Dmol.VolumeData(window.volumedata, 'cube');
-            viewer.addSurface(
-              window.$3Dmol.SurfaceType.SAS,
-              {
-                opacity: 1,
-                voldata: data,
-                colorscheme: scheme,
-                map: { prop: 'partialCharge', scheme: new window.$3Dmol.Gradient.RWB(-0.05, 0.05) }
-              },
-              { chain }
-            );
-          } else {
-            // Fallback: no volume data → normal SAS surface
-            viewer.addSurface(
-              window.$3Dmol.SurfaceType.SAS,
-              { opacity: 1, colorscheme: scheme },
-              { chain }
-            );
-          }
+          viewer.addSurface(
+            window.$3Dmol.SurfaceType.SAS,
+            { opacity: 1, colorscheme: scheme },
+            { chain }
+          );
         });
         break;
 
@@ -121,6 +105,7 @@ export default function MoleculeViewer() {
       // create viewer
       viewerRef.current = window.$3Dmol.createViewer(containerRef.current, {
         defaultcolors: window.$3Dmol.rasmolElementColors,
+        backgroundColor: "black",
       });
       return true;
     }

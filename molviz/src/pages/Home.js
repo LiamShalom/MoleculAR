@@ -1,14 +1,64 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
+// Example images (replace with your own or use public domain PDB images)
+const EXAMPLES = [
+  {
+    name: '1CRN',
+    img: 'https://cdn.rcsb.org/images/structures/1crn_assembly-1.jpeg',
+    desc: 'Crambin (small protein)',
+    pdb: '1CRN',
+    link: 'https://www.rcsb.org/structure/1CRN',
+  },
+  {
+    name: '4HHB',
+    img: 'https://cdn.rcsb.org/images/structures/4hhb_assembly-1.jpeg',
+    desc: 'Hemoglobin',
+    pdb: '4HHB',
+    link: 'https://www.rcsb.org/structure/4HHB',
+  },
+  {
+    name: '1BNA',
+    img: 'https://cdn.rcsb.org/images/structures/1bna_assembly-1.jpeg',
+    desc: 'DNA Dodecamer',
+    pdb: '1BNA',
+    link: 'https://www.rcsb.org/structure/1BNA',
+  },
+];
+
 export default function Home() {
+
+  useEffect(() => {
+    // Wait until the 3Dmol script is loaded and viewers are initialized
+    const timeout = setTimeout(() => {
+      if (window.$3Dmol && window.$3Dmol.viewers) {
+        const viewers = Object.values(window.$3Dmol.viewers);
+        if (viewers.length > 0) {
+          setInterval(() => {
+            viewers.forEach((v, i) => {
+              v.rotate(1);
+              v.setClickable(false);
+              if (i === 0) v.setZoomLimits(100, 100);   // 1CRN closer
+              else if (i === 1) v.setZoomLimits(250, 250); // 4HHB medium
+              else v.setZoomLimits(150, 150);
+            });
+          }, 50);
+        }
+      }
+    }, 500); // wait ~0.5 seconds for auto-render to finish
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="home-container">
       <div className="hero">
+        <div className="hero-bg-anim" aria-hidden="true">
+        </div>
         <div className="hero-inner">
-          <h1 className="title">MolViz AI</h1>
-          <p className="subtitle">AI-powered molecular analysis with quantum chemistry, machine learning, and natural language insights.</p>
+          <h1 className="title">MolViz</h1>
+          <p className="subtitle">Interactive 3D molecular visualization — load PDB files and explore structures with ease.</p>
           <div className="hero-cta">
             <Link className="cta-button primary" to="/quantum">Quantum Chemistry</Link>
             <Link className="cta-button secondary" to="/analysis">AI Analysis</Link>
@@ -21,44 +71,26 @@ export default function Home() {
       <main className="content">
         <section className="cards">
           <article className="card">
-            <div className="card-icon">⚛️</div>
-            <h3>Quantum Chemistry</h3>
-            <p>VQE, EOM, time evolution, and spectral estimation using cutting-edge quantum computing.</p>
-          </article>
-
-          <article className="card">
             <div className="card-icon">🔬</div>
-            <h3>Quantum Spectroscopy</h3>
-            <p>Interactive absorption/emission spectra with phase estimation and shadow tomography.</p>
+            <h3>Quick load</h3>
+            <p>Upload a PDB file or paste PDB text and render the structure instantly.</p>
           </article>
 
           <article className="card">
-            <div className="card-icon">⏰</div>
-            <h3>Quantum Dynamics</h3>
-            <p>Trotterized time evolution for reaction mechanisms and electron transfer processes.</p>
+            <div className="card-icon">🎨</div>
+            <h3>Flexible styles</h3>
+            <p>View protein cartoons, sticks, surfaces and switch color schemes for clarity.</p>
           </article>
 
           <article className="card">
-            <div className="card-icon">🧠</div>
-            <h3>AI Analysis</h3>
-            <p>ML predictions, drug-likeness scoring, and Gemini-powered quantum chemistry insights.</p>
-          </article>
-
-          <article className="card">
-            <div className="card-icon">🎯</div>
-            <h3>Error Mitigation</h3>
-            <p>Advanced noise resilience with confidence scores and statistical error analysis.</p>
-          </article>
-
-          <article className="card">
-            <div className="card-icon">🔬</div>
-            <h3>3D Visualization</h3>
-            <p>Interactive molecular viewer with quantum orbital visualization and real-time manipulation.</p>
+            <div className="card-icon">⚡</div>
+            <h3>Fast & lightweight</h3>
+            <p>Uses the efficient 3Dmol.js viewer for responsive interaction even on large molecules.</p>
           </article>
         </section>
 
         <section className="instructions">
-          <h2>Get started with Quantum Chemistry</h2>
+          <h2>Get started</h2>
           <ol>
             <li>Click "Quantum Chemistry" to access the advanced quantum computing platform.</li>
             <li>Input your molecule and configure quantum simulation parameters (VQE, EOM, time evolution).</li>
