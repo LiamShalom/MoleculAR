@@ -84,6 +84,7 @@ export default function ViewerPage() {
             disabled={searchLoading}
           />
           <button
+            className='search-btn'
             disabled={!searchName.trim() || searchLoading}
             onClick={async () => {
               setSearchLoading(true);
