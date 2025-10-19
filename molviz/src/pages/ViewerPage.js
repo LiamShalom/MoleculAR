@@ -1,11 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import MoleculeViewer from '../viewer/MoleculeViewer';
+import { GoogleGenAI } from "@google/genai";
 import './ViewerPage.css';
+
+const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
+const ai = new GoogleGenAI({apiKey});
+
+async function geminiFindPdbId(moleculeName) {
+  const prompt = `You are an expert in molecular databases. Given the molecule name "${moleculeName}", find the most likely RCSB PDB ID (4-character code) for a structure in the RCSB Protein Data Bank. Only return the PDB ID, nothing else.
+If you cannot find a relevant PDB ID, return "NONE".
+`;
+
+  const response = await ai.models.generateContent({
+    model: "gemini-2.5-flash",
+    contents: prompt,
+  });
+
+  const text = response.text;
+  const match = text.match(/\b([0-9A-Za-z]{4})\b/);
+  if (match && match[1] && match[1].toUpperCase() !== "NONE") {
+    return match[1].toUpperCase();
+  }
+  return null;
+}
 
 export default function ViewerPage() {
   const [pdbText, setPdbText] = useState('');
   const [fileName, setFileName] = useState('');
+  const [searchName, setSearchName] = useState('');
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [searchError, setSearchError] = useState('');
   const location = useLocation();
 
   useEffect(() => {
@@ -47,6 +72,44 @@ export default function ViewerPage() {
     <div className="viewer-page">
       <aside className="controls">
         <h2>Load Structure</h2>
+        {/* New: Search by molecule name using Gemini/RCSB */}
+        <div className="search-section">
+          <label htmlFor="mol-name-search">Find by Molecule Name (AI):</label>
+          <input
+            id="mol-name-search"
+            type="text"
+            value={searchName}
+            onChange={e => setSearchName(e.target.value)}
+            placeholder="e.g. hemoglobin, insulin"
+            disabled={searchLoading}
+          />
+          <button
+            disabled={!searchName.trim() || searchLoading}
+            onClick={async () => {
+              setSearchLoading(true);
+              setSearchError('');
+              try {
+                const pdbId = await geminiFindPdbId(searchName.trim());
+                if (!pdbId) throw new Error('No matching structure found.');
+                // Fetch mmCIF from RCSB
+                const cifResp = await fetch(`https://files.rcsb.org/download/${pdbId}.cif`);
+                if (!cifResp.ok) throw new Error('Failed to fetch mmCIF.');
+                const cifText = await cifResp.text();
+                setPdbText(cifText);
+                setFileName(`${pdbId}.cif`);
+                // Auto-load into viewer
+                window.dispatchEvent(new CustomEvent('loadStructure', { detail: { content: cifText, name: `${pdbId}.cif`, format: 'cif' } }));
+              } catch (err) {
+                setSearchError(err.message || 'Search failed.');
+              } finally {
+                setSearchLoading(false);
+              }
+            }}
+          >
+            {searchLoading ? 'Searching...' : 'Find & Load'}
+          </button>
+          {searchError && <div className="search-error">{searchError}</div>}
+        </div>
         <input type="file" accept=".pdb,.ent,.txt,.cif,.mmcif" onChange={handleFile} />
         <p>or paste structure file content below (PDB or CIF/mmCIF)</p>
         <textarea
