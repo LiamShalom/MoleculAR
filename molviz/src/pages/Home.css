@@ -16,8 +16,11 @@
 .hero-inner { max-width: 880px; text-align: left; }
 .title { font-size: 40px; margin: 0 0 8px 0; color: var(--accent-2); }
 .subtitle { margin: 0 0 16px 0; color: var(--muted); font-size: 16px; }
-.hero-cta { display: flex; gap: 12px; align-items: center; }
+.hero-cta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .cta-button { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #021018; padding: 10px 16px; border-radius: 10px; font-weight: 700; text-decoration: none; }
+.cta-button.primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+.cta-button.secondary { background: transparent; color: #667eea; border: 2px solid #667eea; }
+.cta-button.tertiary { background: transparent; color: #10b981; border: 2px solid #10b981; }
 .cta-outline { color: rgba(214,247,255,0.9); padding: 8px 12px; border-radius: 8px; text-decoration: none; border: 1px solid rgba(255,255,255,0.04); }
 
 .content { display: grid; grid-template-columns: 1fr; gap: 20px; }
@@ -31,6 +34,13 @@
 .instructions h2 { margin-top: 0; color: #bfefff }
 .instructions ol { color: rgba(214,247,255,0.9); }
 .notes { margin-top: 12px; color: rgba(214,247,255,0.85); }
+
+.example-molecules { margin-top: 20px; }
+.example-molecules h3 { color: #bfefff; margin-bottom: 12px; }
+.example-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin-top: 12px; }
+.example-item { background: rgba(255,255,255,0.02); padding: 12px; border-radius: 8px; border: 1px solid var(--glass-2); }
+.example-item strong { color: #e8fbff; display: block; margin-bottom: 4px; }
+.example-item code { color: #667eea; font-family: 'Courier New', monospace; font-size: 12px; word-break: break-all; }
 
 @media (max-width: 880px) {
   .cards { flex-direction: column; }

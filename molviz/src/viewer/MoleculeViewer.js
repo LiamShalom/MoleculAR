@@ -138,15 +138,26 @@ export default function MoleculeViewer() {
       v.clear();
       try {
         // 3Dmol supports 'pdb' and 'mmcif'/'cif' in addModel
-        const fmt = (format === 'cif') ? 'mmcif' : 'pdb';
+        let fmt = format || 'pdb';
+        if (format === 'cif' || format === 'mmcif') {
+          fmt = 'mmcif';
+        } else if (format === 'pdb') {
+          fmt = 'pdb';
+        }
+
+        console.log('Loading structure with format:', fmt);
         const model = v.addModel(content, fmt);
         currentModelRef.current = { model, content, format: fmt };
         v.setBackgroundColor(0x000000);
-        applyRepresentation(v, 'cartoon');
+        applyRepresentation(v, 'ballstick');  // Use ballstick for small molecules
         v.zoomTo();
         v.render();
+
+        // Enable auto-rotation for a nice visual effect
+        v.spin('y', 0.5); // Rotate around Y-axis at 0.5 degrees per frame
       } catch (err) {
         console.error('failed to load structure', err);
+        console.error('Format:', format, 'Content length:', content?.length);
       }
     }
 
