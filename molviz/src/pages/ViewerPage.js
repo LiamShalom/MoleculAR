@@ -72,7 +72,7 @@ export default function ViewerPage() {
     <div className="viewer-page">
       <aside className="controls">
         <h2>Load Structure</h2>
-        {/* New: Search by molecule name using Gemini/RCSB */}
+        {/* Search by molecule name using Gemini/RCSB */}
         <div className="search-section">
           <label htmlFor="mol-name-search">Find by Molecule Name (AI):</label>
           <input
@@ -169,6 +169,7 @@ export default function ViewerPage() {
             <option value="surface">Surface</option>
             <option value="sphere">Sphere (CPK)</option>
             <option value="line">Line</option>
+            <option value="cross">Cross</option>
           </select>
         </div>
       </aside>
