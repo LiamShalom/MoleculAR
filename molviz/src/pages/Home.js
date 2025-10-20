@@ -76,8 +76,8 @@ export default function Home() {
         <div className="hero-bg-anim" aria-hidden="true">
         </div>
         <div className="hero-inner">
-          <h1 className="title">MolViz</h1>
-          <p className="subtitle">Interactive 3D molecular visualization — load PDB files and explore structures with ease.</p>
+          <h1 className="title">MoleculAR</h1>
+          <p className="subtitle">Interactive 3D molecular visualization to explore moleculer structures with ease.</p>
           <div className="hero-cta">
             <Link className="cta-button primary" to="/quantum">Quantum Chemistry</Link>
             <Link className="cta-button tertiary" to="/viewer">3D Viewer</Link>
