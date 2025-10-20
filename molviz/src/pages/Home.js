@@ -79,7 +79,7 @@ export default function Home() {
           <h1 className="title">MoleculAR</h1>
           <p className="subtitle">Interactive 3D molecular visualization to explore moleculer structures with ease.</p>
           <div className="hero-cta">
-            <Link className="cta-button primary" to="/quantum">Quantum Chemistry</Link>
+            {/* <Link className="cta-button primary" to="/quantum">Quantum Chemistry</Link> */}
             <Link className="cta-button tertiary" to="/viewer">3D Viewer</Link>
             <a className="cta-outline" href="https://3dmol.org/" target="_blank" rel="noreferrer">About 3Dmol.js</a>
           </div>
@@ -129,7 +129,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="instructions">
+        {/* <section className="instructions">
 
 
           <div className="example-molecules">
@@ -153,7 +153,7 @@ export default function Home() {
           <div className="notes">
             <strong>Advanced Features:</strong> VQE ground state calculations, EOM excited states, Trotterized time evolution, phase estimation spectroscopy, error mitigation, and quantum confidence scoring.
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );
