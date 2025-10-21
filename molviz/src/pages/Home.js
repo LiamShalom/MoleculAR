@@ -129,7 +129,7 @@ export default function Home() {
           </article>
         </section>
 
-        {/* <section className="instructions">
+        <section className="instructions">
 
 
           <div className="example-molecules">
@@ -153,7 +153,7 @@ export default function Home() {
           <div className="notes">
             <strong>Advanced Features:</strong> VQE ground state calculations, EOM excited states, Trotterized time evolution, phase estimation spectroscopy, error mitigation, and quantum confidence scoring.
           </div>
-        </section> */}
+        </section>
       </main>
     </div>
   );
