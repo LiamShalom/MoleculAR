@@ -12,13 +12,13 @@ function App() {
         <nav className="nav">
           <Link to="/">Home</Link>
           <Link to="/viewer">Molecule Viewer</Link>
-          {/* <Link to="/quantum">Quantum Chemistry</Link> */}
+          <Link to="/quantum">Quantum Chemistry</Link>
         </nav>
         <main className="main">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/viewer" element={<ViewerPage />} />
-            {/* <Route path="/quantum" element={<QuantumAnalysisPage />} /> */}
+            <Route path="/quantum" element={<QuantumAnalysisPage />} />
           </Routes>
         </main>
       </div>
